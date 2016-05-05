@@ -1,3 +1,4 @@
 github "Hearst-DD/ObjectMapper"
 github "slackhq/SlackTextViewController"
 github "MortimerGoro/MGSwipeTableCell"
+github "Alamofire/Alamofire" ~> 3.3.1

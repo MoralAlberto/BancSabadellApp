@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APIEndPoint</key>
+	<string>https://developers.bancsabadell.com/ResourcesServerBS/oauthservices/v1.0.0/</string>
+	<key>APIPaths</key>
+	<dict>
+		<key>APIPathAccounts</key>
+		<string>cuentasvista</string>
+		<key>APIPathProducts</key>
+		<string>productos</string>
+	</dict>
+</dict>
+</plist>

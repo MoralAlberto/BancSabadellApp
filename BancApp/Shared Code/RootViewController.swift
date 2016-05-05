@@ -44,8 +44,8 @@ class RootViewController: SLKTextViewController {
         self.tableView!.tableFooterView = UIView();
         self.tableView!.separatorStyle = .None
         
-        //  Register Cells
-        self.tableView!.registerNib(UINib(nibName: viewModel.articleCellNibName, bundle: nil), forCellReuseIdentifier: viewModel.articleCellReuseIdentifier)
+        //  Register Cells: BancSabacellCell and OptionCell
+        self.tableView!.registerNib(UINib(nibName: viewModel.bancSabadellCellNibName, bundle: nil), forCellReuseIdentifier: viewModel.bancSabadellCellReuseIdentifier)
         
         self.autoCompletionView.registerNib(UINib(nibName: viewModel.optionsCellNibName, bundle: nil), forCellReuseIdentifier: viewModel.optionsCellReuseIdentifier)
         
@@ -54,40 +54,43 @@ class RootViewController: SLKTextViewController {
         
     }
     
-    override class func tableViewStyleForCoder(decoder: NSCoder) -> UITableViewStyle {
-        return UITableViewStyle.Plain;
+
+    //MARK: TableView DataSource
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //  Show me the messages! or show me the autocompletion option
+        return (tableView.isEqual(self.tableView)) ? viewModel.messages.count : viewModel.searchResult.count
     }
     
+    //  Select on cell type or another, depending if the user is type some autocompletion keyword like: '#', '@', etc in our case '#'
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         return (tableView.isEqual(self.tableView)) ? self.messageCellForRowAtIndexPath(indexPath) : self.autoCompletionCellForRowAtIndexPath(indexPath)
     }
     
     func messageCellForRowAtIndexPath(indexPath: NSIndexPath) -> BancSabadellCell {
-        let cell = self.tableView!.dequeueReusableCellWithIdentifier(viewModel.articleCellReuseIdentifier, forIndexPath:indexPath) as? BancSabadellCell
+        let cell = self.tableView!.dequeueReusableCellWithIdentifier(viewModel.bancSabadellCellReuseIdentifier, forIndexPath:indexPath) as? BancSabadellCell
         
         let text = viewModel.messages[indexPath.row]
         cell?.viewModel.configureWithArticle(text, atIndexPath: indexPath)
-//        cell?.ownDelegate = self
-        
         cell?.transform = self.tableView!.transform;
         
         return cell!
     }
     
-    
-    func autoCompletionCellForRowAtIndexPath(indexPath: NSIndexPath) -> OptionCell {
-        let cell = self.autoCompletionView.dequeueReusableCellWithIdentifier(viewModel.optionsCellReuseIdentifier, forIndexPath:  indexPath) as? OptionCell
-        
-        let text = viewModel.searchResult[indexPath.row];
-        cell?.viewModel.configureWithOption((text as? String)!, atIndexPath: indexPath)
-        
-        return cell!
+
+    //MARK: TableView Delegate
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if (tableView.isEqual(self.autoCompletionView)) {
+            
+            let optionName = viewModel.detectOptionSelected(self.foundPrefix!, range: self.foundPrefixRange, atIndexPath: indexPath)
+            self.acceptAutoCompletionWithString(optionName, keepPrefix: true)
+        }
+    }
+
+    override func heightForAutoCompletionView() -> CGFloat {
+        return 60.0 * CGFloat(viewModel.searchResult.count)
     }
     
-    override func textDidUpdate(animated: Bool) {
-        super.textDidUpdate(animated)
-    }
-    
+    //MARK: Override Slack Methods
     override func didPressRightButton(sender: AnyObject!) {
         
         self.textView.refreshFirstResponder();
@@ -116,28 +119,29 @@ class RootViewController: SLKTextViewController {
         super.didPressRightButton(sender)
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //  Show me the messages! or show me the autocompletion option
-        return (tableView.isEqual(self.tableView)) ? viewModel.messages.count : viewModel.searchResult.count
+    override class func tableViewStyleForCoder(decoder: NSCoder) -> UITableViewStyle {
+        return UITableViewStyle.Plain;
     }
+    
+    
+    override func textDidUpdate(animated: Bool) {
+        super.textDidUpdate(animated)
+    }
+    
     
     override func didChangeAutoCompletionPrefix(prefix: String, andWord word: String) {
         viewModel.arrayWithCoincidences(prefix, word: word)
         self.showAutoCompletionView(viewModel.showAutocompletation())
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if (tableView.isEqual(self.autoCompletionView)) {
-            
-            let optionName = viewModel.detectOptionSelected(self.foundPrefix!, range: self.foundPrefixRange, atIndexPath: indexPath)
-            self.acceptAutoCompletionWithString(optionName, keepPrefix: true)
-        }
-    }
-
     
-    override func heightForAutoCompletionView() -> CGFloat {
-        return 60.0 * CGFloat(viewModel.searchResult.count)
+    func autoCompletionCellForRowAtIndexPath(indexPath: NSIndexPath) -> OptionCell {
+        let cell = self.autoCompletionView.dequeueReusableCellWithIdentifier(viewModel.optionsCellReuseIdentifier, forIndexPath:  indexPath) as? OptionCell
+        
+        let text = viewModel.searchResult[indexPath.row];
+        cell?.viewModel.configureWithOption((text as? String)!, atIndexPath: indexPath)
+        
+        return cell!
     }
-    
     
 }

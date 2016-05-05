@@ -7,8 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390A15C31CDB82B8007FFF21 /* BubbleCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15C21CDB82B8007FFF21 /* BubbleCustomView.swift */; };
+		390A15C61CDB8315007FFF21 /* BancSabadellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15C51CDB8315007FFF21 /* BancSabadellModel.swift */; };
+		390A15D01CDB8899007FFF21 /* BancSabadellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15C91CDB8899007FFF21 /* BancSabadellCell.swift */; };
+		390A15D11CDB8899007FFF21 /* BancSabadellCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390A15CA1CDB8899007FFF21 /* BancSabadellCell.xib */; };
+		390A15D21CDB8899007FFF21 /* BancSabadellCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15CB1CDB8899007FFF21 /* BancSabadellCellViewModel.swift */; };
+		390A15D31CDB8899007FFF21 /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15CD1CDB8899007FFF21 /* OptionCell.swift */; };
+		390A15D41CDB8899007FFF21 /* OptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390A15CE1CDB8899007FFF21 /* OptionCell.xib */; };
+		390A15D51CDB8899007FFF21 /* OptionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15CF1CDB8899007FFF21 /* OptionCellViewModel.swift */; };
+		390A15DD1CDB88F1007FFF21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15DC1CDB88F1007FFF21 /* ViewController.swift */; };
+		390A15DF1CDB8A80007FFF21 /* BancSabadellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15DE1CDB8A80007FFF21 /* BancSabadellManager.swift */; };
+		390A15E31CDB8D27007FFF21 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390A15E21CDB8D27007FFF21 /* Alamofire.framework */; };
+		390A15E41CDB8D27007FFF21 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 390A15E21CDB8D27007FFF21 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		390A15E71CDB8D3A007FFF21 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390A15E61CDB8D3A007FFF21 /* OAuthSwift.framework */; };
+		390A15E81CDB8D3A007FFF21 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 390A15E61CDB8D3A007FFF21 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		390A15ED1CDB8EF5007FFF21 /* APIConstants.plist in Resources */ = {isa = PBXBuildFile; fileRef = 390A15EB1CDB8EF5007FFF21 /* APIConstants.plist */; };
+		390A15EE1CDB8EF5007FFF21 /* APIConstantsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15EC1CDB8EF5007FFF21 /* APIConstantsManager.swift */; };
+		390A15F21CDB8F18007FFF21 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15F01CDB8F18007FFF21 /* AccountModel.swift */; };
+		390A15F31CDB8F18007FFF21 /* AccountsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15F11CDB8F18007FFF21 /* AccountsModel.swift */; };
+		390A15F51CDB8F1E007FFF21 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15F41CDB8F1E007FFF21 /* Resource.swift */; };
 		399022D91CDB41A80095850A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399022D81CDB41A80095850A /* AppDelegate.swift */; };
-		399022DB1CDB41A80095850A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399022DA1CDB41A80095850A /* ViewController.swift */; };
 		399022DE1CDB41A80095850A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399022DC1CDB41A80095850A /* Main.storyboard */; };
 		399022E01CDB41A80095850A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399022DF1CDB41A80095850A /* Assets.xcassets */; };
 		399022E31CDB41A80095850A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399022E11CDB41A80095850A /* LaunchScreen.storyboard */; };
@@ -16,13 +34,6 @@
 		399022F91CDB41A80095850A /* BancAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399022F81CDB41A80095850A /* BancAppUITests.swift */; };
 		3990230B1CDB56A30095850A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990230A1CDB56A30095850A /* RootViewController.swift */; };
 		3990230D1CDB56BF0095850A /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990230C1CDB56BF0095850A /* RootViewModel.swift */; };
-		399023121CDB59980095850A /* BancSabadellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990230F1CDB59980095850A /* BancSabadellCell.swift */; };
-		399023131CDB59980095850A /* BancSabadellCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 399023101CDB59980095850A /* BancSabadellCell.xib */; };
-		399023141CDB59980095850A /* BancSabadellCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399023111CDB59980095850A /* BancSabadellCellViewModel.swift */; };
-		399023191CDB59C90095850A /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399023161CDB59C90095850A /* OptionCell.swift */; };
-		3990231A1CDB59C90095850A /* OptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 399023171CDB59C90095850A /* OptionCell.xib */; };
-		3990231B1CDB59C90095850A /* OptionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399023181CDB59C90095850A /* OptionCellViewModel.swift */; };
-		3990231D1CDB5A600095850A /* BancSabadellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990231C1CDB5A600095850A /* BancSabadellModel.swift */; };
 		C55B164B42EE15B28BB6BF19 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AF6107DE1576428B28E485 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,11 +54,42 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		390A15E51CDB8D28007FFF21 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				390A15E81CDB8D3A007FFF21 /* OAuthSwift.framework in Embed Frameworks */,
+				390A15E41CDB8D27007FFF21 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0E28AEFFE69979FBE0A996F8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		390A15C21CDB82B8007FFF21 /* BubbleCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleCustomView.swift; sourceTree = "<group>"; };
+		390A15C51CDB8315007FFF21 /* BancSabadellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellModel.swift; sourceTree = "<group>"; };
+		390A15C91CDB8899007FFF21 /* BancSabadellCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellCell.swift; sourceTree = "<group>"; };
+		390A15CA1CDB8899007FFF21 /* BancSabadellCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BancSabadellCell.xib; sourceTree = "<group>"; };
+		390A15CB1CDB8899007FFF21 /* BancSabadellCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellCellViewModel.swift; sourceTree = "<group>"; };
+		390A15CD1CDB8899007FFF21 /* OptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
+		390A15CE1CDB8899007FFF21 /* OptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionCell.xib; sourceTree = "<group>"; };
+		390A15CF1CDB8899007FFF21 /* OptionCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCellViewModel.swift; sourceTree = "<group>"; };
+		390A15DC1CDB88F1007FFF21 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		390A15DE1CDB8A80007FFF21 /* BancSabadellManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellManager.swift; sourceTree = "<group>"; };
+		390A15E21CDB8D27007FFF21 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		390A15E61CDB8D3A007FFF21 /* OAuthSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = OAuthSwift.framework; path = "/Users/Moral/Library/Developer/Xcode/DerivedData/BancApp-etkxdvpjhdbthsblbartekoututn/Build/Products/Debug-iphonesimulator/OAuthSwift.framework"; sourceTree = "<absolute>"; };
+		390A15EB1CDB8EF5007FFF21 /* APIConstants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIConstants.plist; sourceTree = "<group>"; };
+		390A15EC1CDB8EF5007FFF21 /* APIConstantsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstantsManager.swift; sourceTree = "<group>"; };
+		390A15F01CDB8F18007FFF21 /* AccountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		390A15F11CDB8F18007FFF21 /* AccountsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsModel.swift; sourceTree = "<group>"; };
+		390A15F41CDB8F1E007FFF21 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		399022D51CDB41A80095850A /* BancApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BancApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		399022D81CDB41A80095850A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		399022DA1CDB41A80095850A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		399022DD1CDB41A80095850A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		399022DF1CDB41A80095850A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		399022E21CDB41A80095850A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,13 +102,6 @@
 		399022FA1CDB41A80095850A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3990230A1CDB56A30095850A /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		3990230C1CDB56BF0095850A /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
-		3990230F1CDB59980095850A /* BancSabadellCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellCell.swift; sourceTree = "<group>"; };
-		399023101CDB59980095850A /* BancSabadellCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BancSabadellCell.xib; sourceTree = "<group>"; };
-		399023111CDB59980095850A /* BancSabadellCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellCellViewModel.swift; sourceTree = "<group>"; };
-		399023161CDB59C90095850A /* OptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
-		399023171CDB59C90095850A /* OptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionCell.xib; sourceTree = "<group>"; };
-		399023181CDB59C90095850A /* OptionCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCellViewModel.swift; sourceTree = "<group>"; };
-		3990231C1CDB5A600095850A /* BancSabadellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellModel.swift; sourceTree = "<group>"; };
 		DD81678F94CA816975C380BB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E7AF6107DE1576428B28E485 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +112,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C55B164B42EE15B28BB6BF19 /* Pods.framework in Frameworks */,
+				390A15E31CDB8D27007FFF21 /* Alamofire.framework in Frameworks */,
+				390A15E71CDB8D3A007FFF21 /* OAuthSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +142,106 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		390A15C11CDB82B8007FFF21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				390A15C21CDB82B8007FFF21 /* BubbleCustomView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		390A15C41CDB8315007FFF21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				390A15C51CDB8315007FFF21 /* BancSabadellModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		390A15C71CDB8899007FFF21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				390A15C81CDB8899007FFF21 /* Counts Cell */,
+				390A15CC1CDB8899007FFF21 /* Options */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		390A15C81CDB8899007FFF21 /* Counts Cell */ = {
+			isa = PBXGroup;
+			children = (
+				390A15C91CDB8899007FFF21 /* BancSabadellCell.swift */,
+				390A15CA1CDB8899007FFF21 /* BancSabadellCell.xib */,
+				390A15CB1CDB8899007FFF21 /* BancSabadellCellViewModel.swift */,
+			);
+			path = "Counts Cell";
+			sourceTree = "<group>";
+		};
+		390A15CC1CDB8899007FFF21 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				390A15CD1CDB8899007FFF21 /* OptionCell.swift */,
+				390A15CE1CDB8899007FFF21 /* OptionCell.xib */,
+				390A15CF1CDB8899007FFF21 /* OptionCellViewModel.swift */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
+		390A15D91CDB88DA007FFF21 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				390A15DA1CDB88DA007FFF21 /* API */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		390A15DA1CDB88DA007FFF21 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				390A15DE1CDB8A80007FFF21 /* BancSabadellManager.swift */,
+				390A15F41CDB8F1E007FFF21 /* Resource.swift */,
+				390A15EA1CDB8EF5007FFF21 /* Utils */,
+				390A15EF1CDB8F18007FFF21 /* Models */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		390A15DB1CDB88F1007FFF21 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				390A15DC1CDB88F1007FFF21 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		390A15E91CDB8D46007FFF21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				390A15E61CDB8D3A007FFF21 /* OAuthSwift.framework */,
+				390A15E21CDB8D27007FFF21 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		390A15EA1CDB8EF5007FFF21 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				390A15EB1CDB8EF5007FFF21 /* APIConstants.plist */,
+				390A15EC1CDB8EF5007FFF21 /* APIConstantsManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		390A15EF1CDB8F18007FFF21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				390A15F01CDB8F18007FFF21 /* AccountModel.swift */,
+				390A15F11CDB8F18007FFF21 /* AccountsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		399022CC1CDB41A70095850A = {
 			isa = PBXGroup;
 			children = (
@@ -131,10 +268,12 @@
 			isa = PBXGroup;
 			children = (
 				399022D81CDB41A80095850A /* AppDelegate.swift */,
-				399022DA1CDB41A80095850A /* ViewController.swift */,
+				390A15DB1CDB88F1007FFF21 /* Controllers */,
 				399023091CDB56A30095850A /* Shared Code */,
-				3990230E1CDB598D0095850A /* Views */,
-				399023151CDB59C90095850A /* Options */,
+				390A15C41CDB8315007FFF21 /* Models */,
+				390A15C71CDB8899007FFF21 /* Views */,
+				390A15D91CDB88DA007FFF21 /* Repositories */,
+				390A15E91CDB8D46007FFF21 /* Frameworks */,
 				399022DC1CDB41A80095850A /* Main.storyboard */,
 				399022DF1CDB41A80095850A /* Assets.xcassets */,
 				399022E11CDB41A80095850A /* LaunchScreen.storyboard */,
@@ -166,29 +305,9 @@
 			children = (
 				3990230A1CDB56A30095850A /* RootViewController.swift */,
 				3990230C1CDB56BF0095850A /* RootViewModel.swift */,
+				390A15C11CDB82B8007FFF21 /* Views */,
 			);
 			path = "Shared Code";
-			sourceTree = "<group>";
-		};
-		3990230E1CDB598D0095850A /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				3990230F1CDB59980095850A /* BancSabadellCell.swift */,
-				399023101CDB59980095850A /* BancSabadellCell.xib */,
-				399023111CDB59980095850A /* BancSabadellCellViewModel.swift */,
-				3990231C1CDB5A600095850A /* BancSabadellModel.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		399023151CDB59C90095850A /* Options */ = {
-			isa = PBXGroup;
-			children = (
-				399023161CDB59C90095850A /* OptionCell.swift */,
-				399023171CDB59C90095850A /* OptionCell.xib */,
-				399023181CDB59C90095850A /* OptionCellViewModel.swift */,
-			);
-			path = Options;
 			sourceTree = "<group>";
 		};
 		DEAAD206F22B36544C4DBFC2 /* Pods */ = {
@@ -214,6 +333,7 @@
 				C4416CEE297B2E5A69DB0472 /* Embed Pods Frameworks */,
 				AB28BF7830E662635151D2E8 /* Copy Pods Resources */,
 				399023081CDB54E70095850A /* ShellScript */,
+				390A15E51CDB8D28007FFF21 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,11 +428,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				399023131CDB59980095850A /* BancSabadellCell.xib in Resources */,
+				390A15D41CDB8899007FFF21 /* OptionCell.xib in Resources */,
+				390A15ED1CDB8EF5007FFF21 /* APIConstants.plist in Resources */,
 				399022E31CDB41A80095850A /* LaunchScreen.storyboard in Resources */,
-				3990231A1CDB59C90095850A /* OptionCell.xib in Resources */,
 				399022E01CDB41A80095850A /* Assets.xcassets in Resources */,
 				399022DE1CDB41A80095850A /* Main.storyboard in Resources */,
+				390A15D11CDB8899007FFF21 /* BancSabadellCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +463,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SlackTextViewController.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/MGSwipeTableCell.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			outputPaths = (
 			);
@@ -401,15 +523,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				399022DB1CDB41A80095850A /* ViewController.swift in Sources */,
-				3990231B1CDB59C90095850A /* OptionCellViewModel.swift in Sources */,
 				399022D91CDB41A80095850A /* AppDelegate.swift in Sources */,
-				3990231D1CDB5A600095850A /* BancSabadellModel.swift in Sources */,
-				399023191CDB59C90095850A /* OptionCell.swift in Sources */,
+				390A15D31CDB8899007FFF21 /* OptionCell.swift in Sources */,
+				390A15EE1CDB8EF5007FFF21 /* APIConstantsManager.swift in Sources */,
+				390A15F51CDB8F1E007FFF21 /* Resource.swift in Sources */,
+				390A15C61CDB8315007FFF21 /* BancSabadellModel.swift in Sources */,
+				390A15DD1CDB88F1007FFF21 /* ViewController.swift in Sources */,
+				390A15C31CDB82B8007FFF21 /* BubbleCustomView.swift in Sources */,
+				390A15F21CDB8F18007FFF21 /* AccountModel.swift in Sources */,
+				390A15F31CDB8F18007FFF21 /* AccountsModel.swift in Sources */,
+				390A15DF1CDB8A80007FFF21 /* BancSabadellManager.swift in Sources */,
+				390A15D21CDB8899007FFF21 /* BancSabadellCellViewModel.swift in Sources */,
 				3990230D1CDB56BF0095850A /* RootViewModel.swift in Sources */,
-				399023141CDB59980095850A /* BancSabadellCellViewModel.swift in Sources */,
-				399023121CDB59980095850A /* BancSabadellCell.swift in Sources */,
+				390A15D01CDB8899007FFF21 /* BancSabadellCell.swift in Sources */,
 				3990230B1CDB56A30095850A /* RootViewController.swift in Sources */,
+				390A15D51CDB8899007FFF21 /* OptionCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +682,10 @@
 			baseConfigurationReference = DD81678F94CA816975C380BB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BancApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.albertomoral.BancApp;
@@ -566,6 +698,10 @@
 			baseConfigurationReference = 0E28AEFFE69979FBE0A996F8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BancApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.albertomoral.BancApp;

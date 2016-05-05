@@ -11,25 +11,26 @@ import UIKit
 
 class RootViewModel: NSObject {
     
-    //
+    // Vars
     
     let maxChars: UInt = 256
     let estimateRowHeight: CGFloat = 85.0
     
-    //
-    var users: NSArray = ["Cuentas", "Cuenta #1", "Cuenta #2"]
+    // Override Variables
+    var options: NSArray = []
+    //  Symbol to Detect Autocompletion
+    var detectAutocompletion: [String] = []
+    
     var searchResult = NSArray()
     var messages = [BancSabadellModel]()
     
-    //
-    
-    let articleCellNibName = "BancSabadellCell"
-    let articleCellReuseIdentifier = "bancSabadellCell"
+    // Cell Info
+    let bancSabadellCellNibName = "BancSabadellCell"
+    let bancSabadellCellReuseIdentifier = "bancSabadellCell"
     
     let optionsCellNibName = "OptionCell"
     let optionsCellReuseIdentifier = "AutoCompletionCell"
-    
-    let detectAutocompletion = ["#"]
+
     
     /// MARK: Methods
     func arrayWithCoincidences(prefix: String, word: String) -> [String]? {
@@ -42,9 +43,9 @@ class RootViewModel: NSObject {
         
         if (prefix == "#") {
             let arrayWithAutocompletion = (word.characters.count > 0) ?
-                users.filteredArrayUsingPredicate(NSPredicate(format:"self BEGINSWITH[c] %@", word)) as! [String]
+                options.filteredArrayUsingPredicate(NSPredicate(format:"self BEGINSWITH[c] %@", word)) as! [String]
                 :
-                users as! [String]
+                options as! [String]
             
             searchResult = NSArray(array: arrayWithAutocompletion)
             return arrayWithAutocompletion
@@ -59,31 +60,22 @@ class RootViewModel: NSObject {
     
     func detectOptionSelected(prefix: String, range: NSRange, atIndexPath indexPath: NSIndexPath) -> String {
         
-        let optionName = searchResult[indexPath.row] as? String
+        guard let optionName = searchResult[indexPath.row] as? String else { return "" }
         
         if (prefix == "#" && range.location == 0) {
             
-            if (optionName == "Cuentas") {
-//                BancSabadellManager.login()
-//                BancSabadellManager.cuentasVista()
-                print("OPtion #1")
-            } else if (optionName == "Cuenta #1") {
-                    print("Option #2")
-//                if (PocketManager.pocketToken() == nil) {
-//                    PocketManager.login()
-//                        .observeOn(UIScheduler())
-//                        .startWithNext({ success in
-//                            
-//                            self.getArticles()
-//                        })
-//                } else {
-//                    self.getArticles()
-//                }
-            } else if (optionName == "Cuenta #2"){
-                print("OPtion #3")
+            switch optionName {
+            case "Cuentas":
+                print("Option #1")
+            case "Cuenta #1":
+                print("Option #2")
+            case "Cuenta #2":
+                print("Option #3")
+            default:
+                print("No code")
             }
         }
         
-        return optionName!
+        return optionName
     }
 }
