@@ -14,6 +14,8 @@
 		399022E31CDB41A80095850A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399022E11CDB41A80095850A /* LaunchScreen.storyboard */; };
 		399022EE1CDB41A80095850A /* BancAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399022ED1CDB41A80095850A /* BancAppTests.swift */; };
 		399022F91CDB41A80095850A /* BancAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399022F81CDB41A80095850A /* BancAppUITests.swift */; };
+		399023071CDB52060095850A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399023061CDB52060095850A /* RootViewController.swift */; };
+		C55B164B42EE15B28BB6BF19 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AF6107DE1576428B28E485 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E28AEFFE69979FBE0A996F8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		399022D51CDB41A80095850A /* BancApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BancApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		399022D81CDB41A80095850A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		399022DA1CDB41A80095850A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		399022F41CDB41A80095850A /* BancAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BancAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		399022F81CDB41A80095850A /* BancAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancAppUITests.swift; sourceTree = "<group>"; };
 		399022FA1CDB41A80095850A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		399023061CDB52060095850A /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		DD81678F94CA816975C380BB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E7AF6107DE1576428B28E485 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C55B164B42EE15B28BB6BF19 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C844FF44EDAD981E1FDF48F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7AF6107DE1576428B28E485 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		399022CC1CDB41A70095850A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,8 @@
 				399022EC1CDB41A80095850A /* BancAppTests */,
 				399022F71CDB41A80095850A /* BancAppUITests */,
 				399022D61CDB41A80095850A /* Products */,
+				DEAAD206F22B36544C4DBFC2 /* Pods */,
+				2C844FF44EDAD981E1FDF48F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +116,7 @@
 			children = (
 				399022D81CDB41A80095850A /* AppDelegate.swift */,
 				399022DA1CDB41A80095850A /* ViewController.swift */,
+				399023061CDB52060095850A /* RootViewController.swift */,
 				399022DC1CDB41A80095850A /* Main.storyboard */,
 				399022DF1CDB41A80095850A /* Assets.xcassets */,
 				399022E11CDB41A80095850A /* LaunchScreen.storyboard */,
@@ -125,6 +143,15 @@
 			path = BancAppUITests;
 			sourceTree = "<group>";
 		};
+		DEAAD206F22B36544C4DBFC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD81678F94CA816975C380BB /* Pods.debug.xcconfig */,
+				0E28AEFFE69979FBE0A996F8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 399022FD1CDB41A80095850A /* Build configuration list for PBXNativeTarget "BancApp" */;
 			buildPhases = (
+				E8097FD1B1EC2D570DFA2E04 /* Check Pods Manifest.lock */,
 				399022D11CDB41A80095850A /* Sources */,
 				399022D21CDB41A80095850A /* Frameworks */,
 				399022D31CDB41A80095850A /* Resources */,
+				C4416CEE297B2E5A69DB0472 /* Embed Pods Frameworks */,
+				AB28BF7830E662635151D2E8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +281,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AB28BF7830E662635151D2E8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4416CEE297B2E5A69DB0472 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8097FD1B1EC2D570DFA2E04 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		399022D11CDB41A80095850A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +336,7 @@
 			files = (
 				399022DB1CDB41A80095850A /* ViewController.swift in Sources */,
 				399022D91CDB41A80095850A /* AppDelegate.swift in Sources */,
+				399023071CDB52060095850A /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +478,7 @@
 		};
 		399022FE1CDB41A80095850A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD81678F94CA816975C380BB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BancApp/Info.plist;
@@ -410,6 +490,7 @@
 		};
 		399022FF1CDB41A80095850A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E28AEFFE69979FBE0A996F8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BancApp/Info.plist;
@@ -484,6 +565,7 @@
 				399022FF1CDB41A80095850A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		399023001CDB41A80095850A /* Build configuration list for PBXNativeTarget "BancAppTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +574,7 @@
 				399023021CDB41A80095850A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		399023031CDB41A80095850A /* Build configuration list for PBXNativeTarget "BancAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +583,7 @@
 				399023051CDB41A80095850A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

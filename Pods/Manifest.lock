@@ -1,0 +1,32 @@
+PODS:
+  - Haneke (1.0.2)
+  - OAuthSwift (0.5.2)
+  - ObjectMapper (1.2.0)
+  - PocketAPI (1.0.3)
+  - SlackTextViewController (1.9.2)
+
+DEPENDENCIES:
+  - Haneke (~> 1.0)
+  - OAuthSwift
+  - ObjectMapper
+  - PocketAPI (from `https://github.com/Pocket/Pocket-ObjC-SDK`, commit `08b4cd79385f4084de70e797567937d568205ffa`)
+  - SlackTextViewController
+
+EXTERNAL SOURCES:
+  PocketAPI:
+    :commit: 08b4cd79385f4084de70e797567937d568205ffa
+    :git: https://github.com/Pocket/Pocket-ObjC-SDK
+
+CHECKOUT OPTIONS:
+  PocketAPI:
+    :commit: 08b4cd79385f4084de70e797567937d568205ffa
+    :git: https://github.com/Pocket/Pocket-ObjC-SDK
+
+SPEC CHECKSUMS:
+  Haneke: 01454a67322faa0dd9d81fc0f447885044e71521
+  OAuthSwift: 1ef042d4362e755e24a78f158d817245641a5d24
+  ObjectMapper: b1e9c7c8a9f6400b72690c80072c131504caa66f
+  PocketAPI: f65f80eee2b05d28aeecf711b0f5b87ee2be3e28
+  SlackTextViewController: bac3350ccc639bc446bb14cbd09da238f5e01f32
+
+COCOAPODS: 0.39.0
