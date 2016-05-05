@@ -165,6 +165,7 @@
 				399022D31CDB41A80095850A /* Resources */,
 				C4416CEE297B2E5A69DB0472 /* Embed Pods Frameworks */,
 				AB28BF7830E662635151D2E8 /* Copy Pods Resources */,
+				399023081CDB54E70095850A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -282,6 +283,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		399023081CDB54E70095850A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SlackTextViewController.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MGSwipeTableCell.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		AB28BF7830E662635151D2E8 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

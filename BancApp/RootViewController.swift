@@ -6,7 +6,7 @@
 //  Copyright © 2016 Alberto Moral. All rights reserved.
 //
 
-
+import SlackTextViewController
 
 class RootViewController: SLKTextViewController {
     
@@ -30,12 +30,12 @@ class RootViewController: SLKTextViewController {
         self.inverted = true;
         
         //  Autocompletion
-        self.autoCompletionView.estimatedRowHeight = viewModel.estimateRowHeight
+//        self.autoCompletionView.estimatedRowHeight = viewModel.estimateRowHeight
         self.autoCompletionView.rowHeight = UITableViewAutomaticDimension
         
         //  Input Textfield
         self.textInputbar.autoHideRightButton = true;
-        self.textInputbar.maxCharCount = viewModel.maxChars;
+//        self.textInputbar.maxCharCount = viewModel.maxChars;
         self.textInputbar.counterStyle = SLKCounterStyle.Countdown;
         self.textInputbar.counterPosition = SLKCounterPosition.Top;
         
@@ -43,8 +43,8 @@ class RootViewController: SLKTextViewController {
         self.tableView!.separatorStyle = .None
         
         //  Register Cells
-        self.tableView!.registerNib(UINib(nibName: viewModel.articleCellNibName, bundle: nil), forCellReuseIdentifier: viewModel.articleCellReuseIdentifier)
-        self.autoCompletionView.registerNib(UINib(nibName: viewModel.optionsCellNibName, bundle: nil), forCellReuseIdentifier: viewModel.optionsCellReuseIdentifier)
+//        self.tableView!.registerNib(UINib(nibName: viewModel.articleCellNibName, bundle: nil), forCellReuseIdentifier: viewModel.articleCellReuseIdentifier)
+//        self.autoCompletionView.registerNib(UINib(nibName: viewModel.optionsCellNibName, bundle: nil), forCellReuseIdentifier: viewModel.optionsCellReuseIdentifier)
         
         //  Register prefixes to show autocompletion
 //        self.registerPrefixesForAutoCompletion(viewModel.detectAutocompletion)
