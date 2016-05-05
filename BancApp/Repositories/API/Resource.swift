@@ -77,42 +77,76 @@ extension Resource {
     
     func refreshToken() {
         //let refreshToken = NSUserDefaults.standardUserDefaults().objectForKey("bancSabadellToken")
-        let token = "8b00f6b9-64b7-4d9b-a4e6-9635f45118f3b31f891a-4e53-4db4-996d-8a53e53eec0253e68eab-07c9-415b-9734-51c6c223ce2c"
-        let refreshToken = "14a5cbef-b12d-4d24-8f84-d6dd6cc75d5f"
         
         
+
+        
+        
+    
+        
+        
+        
+        
+        
+//        let token = "8b00f6b9-64b7-4d9b-a4e6-9635f45118f3b31f891a-4e53-4db4-996d-8a53e53eec0253e68eab-07c9-415b-9734-51c6c223ce2c"
+        let refreshToken = "1fd4f5d8-320b-4437-ae1a-7bcc26b346e1"
+//
+//        
         let authentification = "CLI1455983911404GzJ5rZJOV2sH37vNncxsPvRAofHTff4MGzR6K02K84764Y:C4ligul4s".dataUsingEncoding(NSUTF8StringEncoding)
         let base64Encoded = authentification?.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue: 0))
-//        {
-//            headers = ["Authorization": "Basic \(base64Encoded)"]
-//        }
+//
+//        
+//        
+        let headers = [//"Accept": "application/x-www-form-urlencoded",
+                       "Authorization" : "Basic \(base64Encoded!)", "Content-Type": "text/html"]
+//
+//        let session = NSURLSession.sharedSession()
+//        
+//        let request = NSMutableURLRequest(URL: NSURL(string: "https://developers.bancsabadell.com/AuthServerBS/oauth/token")!)
+//        request.HTTPMethod = "POST"
+//        request.allHTTPHeaderFields = headers
+//        
+//        
+        let params = ["client_id": "CLI1455983911404GzJ5rZJOV2sH37vNncxsPvRAofHTff4MGzR6K02K84764Y",
+                      "client_secret": "C4ligul4s",
+                      "refresh_token":refreshToken,
+                      "grant_type": "refresh_token"
+                      ]
+//
+//        request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(params, options: NSJSONWritingOptions.PrettyPrinted)
+        
+
         
         
         
-        let headers = ["Accept": "application/json, application/x-www-form-urlencoded",
-                       "Authorization" : "Basic \(base64Encoded!)"]
         
-        let session = NSURLSession.sharedSession()
-        
-        let request = NSMutableURLRequest(URL: NSURL(string: "https://developers.bancsabadell.com/AuthServerBS/oauth/token")!)
-        request.HTTPMethod = "POST"
-        request.allHTTPHeaderFields = headers
-        
-        
-        let params = ["client_id":"CLI1455983911404GzJ5rZJOV2sH37vNncxsPvRAofHTff4MGzR6K02K84764Y", "client_secret":"C4ligul4s", "grant_type":"refresh_token", "refresh_token":refreshToken]
-        
-        request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(params, options: NSJSONWritingOptions.PrettyPrinted)
-        
-        
-        session.dataTaskWithRequest(request) { data, response, error in
-            let json = data.flatMap {
-                try? NSJSONSerialization.JSONObjectWithData($0, options: NSJSONReadingOptions())
-            }
+        BancSabadellManager.oauthswift.startAuthorizedRequest("https://developers.bancsabadell.com/AuthServerBS/oauth/token", method: .POST, parameters: params, headers: headers, success: { (data, response) in
             
-            print("Datos recibidos \(json)")
-            
-            
-        }.resume()
+//            let json = data.flatMap {
+            let json = try? NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions())
+//            }
+                print("JSON \(json) and data \(data)")
+            }) { (error) in
+                print(error)
+        }
+        
+        
+        
+        
+        
+//        session.dataTaskWithRequest(request) { data, response, error in
+//            let json = data.flatMap {
+//                try? NSJSONSerialization.JSONObjectWithData($0, options: NSJSONReadingOptions())
+//            }
+//            
+//            let value = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
+//            
+////            let string = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
+//            
+//            print("Datos recibidos \(json) and string \(value)")
+//            
+//            
+//        }.resume()
         
     }
 

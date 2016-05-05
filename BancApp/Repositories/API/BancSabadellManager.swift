@@ -13,6 +13,14 @@ import OAuthSwift
 
 class BancSabadellManager {
     
+    static let oauthswift = OAuth2Swift(
+        consumerKey:    "CLI1455983911404GzJ5rZJOV2sH37vNncxsPvRAofHTff4MGzR6K02K84764Y",
+        consumerSecret: "C4ligul4s",
+        authorizeUrl:   "https://developers.bancsabadell.com/AuthServerBS/oauth/authorize",
+        accessTokenUrl: "https://developers.bancsabadell.com/AuthServerBS/oauth/token",
+        responseType:   "code"
+    )
+    
     class func login() {
         let token = NSUserDefaults.standardUserDefaults().stringForKey("bancSabadellToken")
         
