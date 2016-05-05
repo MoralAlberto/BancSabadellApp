@@ -4,6 +4,11 @@
 <dict>
 	<key>APIEndPoint</key>
 	<string>https://developers.bancsabadell.com/ResourcesServerBS/oauthservices/v1.0.0/</string>
+	<key>APIOAuth</key>
+	<dict>
+		<key>APIPathRefreshToken</key>
+		<string>oauth/token</string>
+	</dict>
 	<key>APIPaths</key>
 	<dict>
 		<key>APIPathAccounts</key>

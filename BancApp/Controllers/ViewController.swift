@@ -23,6 +23,12 @@ class ViewController: RootViewController {
 //            print(x)
 //        }
         
+        let refreshToken: Resource<Any> = Resource(pathComponent: "")
+        refreshToken.refreshToken()
+        
+        
+        
+        
     }
 }
 
