@@ -14,7 +14,15 @@
 		399022E31CDB41A80095850A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399022E11CDB41A80095850A /* LaunchScreen.storyboard */; };
 		399022EE1CDB41A80095850A /* BancAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399022ED1CDB41A80095850A /* BancAppTests.swift */; };
 		399022F91CDB41A80095850A /* BancAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399022F81CDB41A80095850A /* BancAppUITests.swift */; };
-		399023071CDB52060095850A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399023061CDB52060095850A /* RootViewController.swift */; };
+		3990230B1CDB56A30095850A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990230A1CDB56A30095850A /* RootViewController.swift */; };
+		3990230D1CDB56BF0095850A /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990230C1CDB56BF0095850A /* RootViewModel.swift */; };
+		399023121CDB59980095850A /* BancSabadellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990230F1CDB59980095850A /* BancSabadellCell.swift */; };
+		399023131CDB59980095850A /* BancSabadellCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 399023101CDB59980095850A /* BancSabadellCell.xib */; };
+		399023141CDB59980095850A /* BancSabadellCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399023111CDB59980095850A /* BancSabadellCellViewModel.swift */; };
+		399023191CDB59C90095850A /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399023161CDB59C90095850A /* OptionCell.swift */; };
+		3990231A1CDB59C90095850A /* OptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 399023171CDB59C90095850A /* OptionCell.xib */; };
+		3990231B1CDB59C90095850A /* OptionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399023181CDB59C90095850A /* OptionCellViewModel.swift */; };
+		3990231D1CDB5A600095850A /* BancSabadellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990231C1CDB5A600095850A /* BancSabadellModel.swift */; };
 		C55B164B42EE15B28BB6BF19 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AF6107DE1576428B28E485 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +58,15 @@
 		399022F41CDB41A80095850A /* BancAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BancAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		399022F81CDB41A80095850A /* BancAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancAppUITests.swift; sourceTree = "<group>"; };
 		399022FA1CDB41A80095850A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		399023061CDB52060095850A /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		3990230A1CDB56A30095850A /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		3990230C1CDB56BF0095850A /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		3990230F1CDB59980095850A /* BancSabadellCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellCell.swift; sourceTree = "<group>"; };
+		399023101CDB59980095850A /* BancSabadellCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BancSabadellCell.xib; sourceTree = "<group>"; };
+		399023111CDB59980095850A /* BancSabadellCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellCellViewModel.swift; sourceTree = "<group>"; };
+		399023161CDB59C90095850A /* OptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
+		399023171CDB59C90095850A /* OptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionCell.xib; sourceTree = "<group>"; };
+		399023181CDB59C90095850A /* OptionCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCellViewModel.swift; sourceTree = "<group>"; };
+		3990231C1CDB5A600095850A /* BancSabadellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellModel.swift; sourceTree = "<group>"; };
 		DD81678F94CA816975C380BB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E7AF6107DE1576428B28E485 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,7 +132,9 @@
 			children = (
 				399022D81CDB41A80095850A /* AppDelegate.swift */,
 				399022DA1CDB41A80095850A /* ViewController.swift */,
-				399023061CDB52060095850A /* RootViewController.swift */,
+				399023091CDB56A30095850A /* Shared Code */,
+				3990230E1CDB598D0095850A /* Views */,
+				399023151CDB59C90095850A /* Options */,
 				399022DC1CDB41A80095850A /* Main.storyboard */,
 				399022DF1CDB41A80095850A /* Assets.xcassets */,
 				399022E11CDB41A80095850A /* LaunchScreen.storyboard */,
@@ -141,6 +159,36 @@
 				399022FA1CDB41A80095850A /* Info.plist */,
 			);
 			path = BancAppUITests;
+			sourceTree = "<group>";
+		};
+		399023091CDB56A30095850A /* Shared Code */ = {
+			isa = PBXGroup;
+			children = (
+				3990230A1CDB56A30095850A /* RootViewController.swift */,
+				3990230C1CDB56BF0095850A /* RootViewModel.swift */,
+			);
+			path = "Shared Code";
+			sourceTree = "<group>";
+		};
+		3990230E1CDB598D0095850A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3990230F1CDB59980095850A /* BancSabadellCell.swift */,
+				399023101CDB59980095850A /* BancSabadellCell.xib */,
+				399023111CDB59980095850A /* BancSabadellCellViewModel.swift */,
+				3990231C1CDB5A600095850A /* BancSabadellModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		399023151CDB59C90095850A /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				399023161CDB59C90095850A /* OptionCell.swift */,
+				399023171CDB59C90095850A /* OptionCell.xib */,
+				399023181CDB59C90095850A /* OptionCellViewModel.swift */,
+			);
+			path = Options;
 			sourceTree = "<group>";
 		};
 		DEAAD206F22B36544C4DBFC2 /* Pods */ = {
@@ -260,7 +308,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				399023131CDB59980095850A /* BancSabadellCell.xib in Resources */,
 				399022E31CDB41A80095850A /* LaunchScreen.storyboard in Resources */,
+				3990231A1CDB59C90095850A /* OptionCell.xib in Resources */,
 				399022E01CDB41A80095850A /* Assets.xcassets in Resources */,
 				399022DE1CDB41A80095850A /* Main.storyboard in Resources */,
 			);
@@ -352,8 +402,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				399022DB1CDB41A80095850A /* ViewController.swift in Sources */,
+				3990231B1CDB59C90095850A /* OptionCellViewModel.swift in Sources */,
 				399022D91CDB41A80095850A /* AppDelegate.swift in Sources */,
-				399023071CDB52060095850A /* RootViewController.swift in Sources */,
+				3990231D1CDB5A600095850A /* BancSabadellModel.swift in Sources */,
+				399023191CDB59C90095850A /* OptionCell.swift in Sources */,
+				3990230D1CDB56BF0095850A /* RootViewModel.swift in Sources */,
+				399023141CDB59980095850A /* BancSabadellCellViewModel.swift in Sources */,
+				399023121CDB59980095850A /* BancSabadellCell.swift in Sources */,
+				3990230B1CDB56A30095850A /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
