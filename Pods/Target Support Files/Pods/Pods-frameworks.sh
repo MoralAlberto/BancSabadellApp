@@ -86,14 +86,12 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/Haneke.framework"
   install_framework "Pods/OAuthSwift.framework"
-  install_framework "Pods/ObjectMapper.framework"
   install_framework "Pods/PocketAPI.framework"
-  install_framework "Pods/SlackTextViewController.framework"
+  install_framework "Pods/Prephirences.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/Haneke.framework"
   install_framework "Pods/OAuthSwift.framework"
-  install_framework "Pods/ObjectMapper.framework"
   install_framework "Pods/PocketAPI.framework"
-  install_framework "Pods/SlackTextViewController.framework"
+  install_framework "Pods/Prephirences.framework"
 fi
