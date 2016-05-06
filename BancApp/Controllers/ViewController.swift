@@ -13,18 +13,15 @@ class ViewController: RootViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.viewModel.options = ["Cuentas", "Cuenta #1", "Cuenta #2"]
-        self.viewModel.detectAutocompletion = ["#"]
+//        self.viewModel.options = ["Cuentas", "Cuenta #1", "Cuenta #2"]
+//        self.viewModel.detectAutocompletion = ["#"]
         
-//        BancSabadellManager.login()
         
-        let accountResource: Resource<AccountsModel> = Resource(pathComponent: "\(APIConstants.APIEndPoint()!+APIConstants.APIPathAccounts()!)")
-        accountResource.loadAsynchronous(AccountsModel.self) { x in
-            print(x)
-        }
-//
-//        let refreshToken: Resource<Any> = Resource(pathComponent: "")
-//        refreshToken.refreshToken()
+//        let accountResource: Resource<AccountsModel> = Resource(pathComponent: "\(APIConstants.APIEndPoint()!+APIConstants.APIPathAccounts()!)")
+//        accountResource.loadAsynchronous(AccountsModel.self) { x in
+//            print(x)
+//        }
+
         
         
         

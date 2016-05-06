@@ -9,6 +9,7 @@
 import Foundation
 import ObjectMapper
 import OAuthSwift
+import Prephirences
 
 struct Resource<A> {
     let pathComponent: String
@@ -27,48 +28,61 @@ struct Resource<A> {
 extension Resource {
     func loadAsynchronous<A: Mappable>(toClass: A.Type, callback: A -> ())  {
         
-        let headers = ["Accept": "application/json, application/x-www-form-urlencoded",
-                       "Authorization" : "Bearer \(oauthswift.client.credential.oauth_token)"]
+        //  Si existe el token, haz la llamada a la API
+        if let token = NSUserDefaults.standardUserDefaults().objectForKey("token") {
+            
+            let headers = ["Accept": "application/json, application/x-www-form-urlencoded",
+                           "Authorization" : "Bearer \(token)"]
+            
+            oauthswift.startAuthorizedRequest(pathComponent, method: .POST, parameters: [:], headers: headers, success: { (data, response) in
+                
+                
+                    let json = try? NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions())
+                    let result = Mapper<A>().map(json)
+                    callback(result!)
+                    
+                    print("JSON \(json) and data \(data)")
+                
+
+            }) { (error) in
+                print(error)
+                //  Si hay error, haz la lógica para refrescar el Token
+                self.refreshToken()
+            }
         
-        oauthswift.client.credential = credential
-        
-        oauthswift.startAuthorizedRequest(pathComponent, method: .POST, parameters: [:], headers: headers, success: { (data, response) in
+        //  Si no existe el token, carga la web para logearme
+        } else {
+            oauthswift.accessTokenBasicAuthentification = true
             
-            let json = try? NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions())
+            let state: String = generateStateWithLength(16) as String
             
-            let result = Mapper<A>().map(json)
-            callback(result!)
-            
-            print("JSON \(json) and data \(data)")
-        }) { (error) in
-            print(error)
+            oauthswift.authorizeWithCallbackURL(
+                NSURL(string: "BancApp://oauth-callback")!,
+                scope: "read+auth", state: state,
+                success: { credential, response, parameters in
+                    print("Token: \(credential.oauth_token) \n")
+                    print("Refresh Token: \(credential.oauth_refresh_token) \n")
+                    print("Expires at: \(credential.oauth_token_expires_at) \n")
+                    
+                    // each element
+                    NSUserDefaults.standardUserDefaults().setObject(credential.oauth_token, forKey: "token")
+                    NSUserDefaults.standardUserDefaults().setObject(credential.oauth_refresh_token, forKey: "refresh_token")
+                    NSUserDefaults.standardUserDefaults().setObject(credential.oauth_token_expires_at, forKey: "token_expires_at")
+                    NSUserDefaults.standardUserDefaults().synchronize()
+                    
+                },
+                failure: { error in
+                    print(error.localizedDescription)
+                }
+            )
         }
 
-        
-//        let session = NSURLSession.sharedSession()
-//        
-//        let token = NSUserDefaults.standardUserDefaults().objectForKey("bancSabadellToken")
-//        let headers = ["Accept": "application/json, application/x-www-form-urlencoded",
-//                       "Authorization" : "Bearer \(token! as! String)"]
-//        
-//        let request = NSMutableURLRequest(URL: NSURL(string: pathComponent)!)
-//        request.HTTPMethod = "POST"
-//        request.allHTTPHeaderFields = headers
-//        
-//        session.dataTaskWithRequest(request) { data, response, error in
-//            let json = data.flatMap {
-//                try? NSJSONSerialization.JSONObjectWithData($0, options: NSJSONReadingOptions())
-//            }
-//            
-//            let result = Mapper<A>().map(json)
-//            callback(result!)
-//            
-//        }.resume()
     }
     
     
     func refreshToken() {
-        let refreshToken = "d484f194-2a50-4bb0-aeca-9a11d1916a09"
+        
+        let refreshToken = NSUserDefaults.standardUserDefaults().objectForKey("refresh_token") as! String
 
         let authentification = "CLI1455983911404GzJ5rZJOV2sH37vNncxsPvRAofHTff4MGzR6K02K84764Y:C4ligul4s".dataUsingEncoding(NSUTF8StringEncoding)
         let base64Encoded = authentification?.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue: 0))
@@ -85,10 +99,16 @@ extension Resource {
         oauthswift.startAuthorizedRequest("https://developers.bancsabadell.com/AuthServerBS/oauth/token", method: .POST, parameters: params, headers: headers, success: { (data, response) in
             
             let json = try? NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions())
-
-                print("JSON \(json) and data \(data)")
-            }) { (error) in
-                print(error)
+            print("JSON \(json) and data \(data)")
+            
+            // each element
+            NSUserDefaults.standardUserDefaults().setObject(json!["access_token"] as! String, forKey: "token")
+            NSUserDefaults.standardUserDefaults().setObject(json!["refresh_token"] as! String, forKey: "refresh_token")
+            NSUserDefaults.standardUserDefaults().setObject(json!["expires_in"] as! NSNumber, forKey: "expires_in")
+            NSUserDefaults.standardUserDefaults().synchronize()
+            
+        }) { (error) in
+            print(error)
         }
     }
 

@@ -17,9 +17,9 @@ class RootViewModel: NSObject {
     let estimateRowHeight: CGFloat = 85.0
     
     // Override Variables
-    var options: NSArray = []
+    var options: NSArray = ["Cuentas", "Cuenta #1", "Cuenta #2"]
     //  Symbol to Detect Autocompletion
-    var detectAutocompletion: [String] = []
+    var detectAutocompletion: [String] = ["#"]
     
     var searchResult = NSArray()
     var messages = [BancSabadellModel]()
