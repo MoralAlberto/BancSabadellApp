@@ -17,10 +17,10 @@ class ViewController: RootViewController {
 //        self.viewModel.detectAutocompletion = ["#"]
         
         
-//        let accountResource: Resource<AccountsModel> = Resource(pathComponent: "\(APIConstants.APIEndPoint()!+APIConstants.APIPathAccounts()!)")
-//        accountResource.loadAsynchronous(AccountsModel.self) { x in
-//            print(x)
-//        }
+        let accountResource: Resource<AccountsModel> = Resource(pathComponent: "\(APIConstants.APIEndPoint()!+APIConstants.APIPathAccounts()!)")
+        accountResource.loadAsynchronous(AccountsModel.self) { x in
+            print(x)
+        }
 
         
         

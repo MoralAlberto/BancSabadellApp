@@ -52,36 +52,41 @@ extension Resource {
         
         //  Si no existe el token, carga la web para logearme
         } else {
-            oauthswift.accessTokenBasicAuthentification = true
-            
-            let state: String = generateStateWithLength(16) as String
-            
-            oauthswift.authorizeWithCallbackURL(
-                NSURL(string: "BancApp://oauth-callback")!,
-                scope: "read+auth", state: state,
-                success: { credential, response, parameters in
-                    print("Token: \(credential.oauth_token) \n")
-                    print("Refresh Token: \(credential.oauth_refresh_token) \n")
-                    print("Expires at: \(credential.oauth_token_expires_at) \n")
-                    
-                    // each element
-                    NSUserDefaults.standardUserDefaults().setObject(credential.oauth_token, forKey: "token")
-                    NSUserDefaults.standardUserDefaults().setObject(credential.oauth_refresh_token, forKey: "refresh_token")
-                    NSUserDefaults.standardUserDefaults().setObject(credential.oauth_token_expires_at, forKey: "token_expires_at")
-                    NSUserDefaults.standardUserDefaults().synchronize()
-                    
-                },
-                failure: { error in
-                    print(error.localizedDescription)
-                }
-            )
+            login()
         }
 
     }
     
     
-    func refreshToken() {
+    func login() {
+        oauthswift.accessTokenBasicAuthentification = true
         
+        let state: String = generateStateWithLength(16) as String
+        
+        oauthswift.authorizeWithCallbackURL(
+            NSURL(string: "BancApp://oauth-callback")!,
+            scope: "read+auth", state: state,
+            success: { credential, response, parameters in
+                print("Token: \(credential.oauth_token) \n")
+                print("Refresh Token: \(credential.oauth_refresh_token) \n")
+                print("Expires at: \(credential.oauth_token_expires_at) \n")
+                
+                // each element
+                NSUserDefaults.standardUserDefaults().setObject(credential.oauth_token, forKey: "token")
+                NSUserDefaults.standardUserDefaults().setObject(credential.oauth_refresh_token, forKey: "refresh_token")
+                NSUserDefaults.standardUserDefaults().setObject(credential.oauth_token_expires_at, forKey: "token_expires_at")
+                NSUserDefaults.standardUserDefaults().synchronize()
+                
+            },
+            failure: { error in
+                print(error.localizedDescription)
+            }
+        )
+    }
+    
+    
+    
+    func refreshToken() {
         let refreshToken = NSUserDefaults.standardUserDefaults().objectForKey("refresh_token") as! String
 
         let authentification = "CLI1455983911404GzJ5rZJOV2sH37vNncxsPvRAofHTff4MGzR6K02K84764Y:C4ligul4s".dataUsingEncoding(NSUTF8StringEncoding)
@@ -109,6 +114,7 @@ extension Resource {
             
         }) { (error) in
             print(error)
+            self.login()
         }
     }
 

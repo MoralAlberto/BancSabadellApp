@@ -9,7 +9,14 @@
 import Foundation
 import UIKit
 
+protocol RootViewModelDelegate {
+    func updateView()
+}
+
 class RootViewModel: NSObject {
+    
+    //  Delegate
+    var delegate: RootViewModelDelegate!
     
     // Vars
     
@@ -67,6 +74,22 @@ class RootViewModel: NSObject {
             switch optionName {
             case "Cuentas":
                 print("Option #1")
+                let accountResource: Resource<AccountsModel> = Resource(pathComponent: "\(APIConstants.APIEndPoint()!+APIConstants.APIPathAccounts()!)")
+                accountResource.loadAsynchronous(AccountsModel.self) { x in
+                    print(x)
+                    
+                    for account in x.data! {
+                        let newAccount = BancSabadellModel()
+                        newAccount.balance = account.balance
+                        newAccount.descriptionAccount = account.description
+                        newAccount.iban = account.iban
+                        newAccount.producto = account.producto
+                        
+                        self.messages.append(newAccount)
+                    }
+                    
+                    self.delegate.updateView()
+                }
             case "Cuenta #1":
                 print("Option #2")
             case "Cuenta #2":

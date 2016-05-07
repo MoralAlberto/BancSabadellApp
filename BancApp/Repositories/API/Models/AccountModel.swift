@@ -12,6 +12,8 @@ import ObjectMapper
 class AccountModel: Mappable {
     var balance: String?
     var description: String?
+    var producto: String?
+    var iban: String?
     
     required init?(_ map: Map) {}
     
@@ -19,5 +21,8 @@ class AccountModel: Mappable {
     func mapping(map: Map) {
         description <- map["descripcion"]
         balance <- map["balance"]
+        iban <- map["iban"]
+        producto <- map["producto"]
+        
     }
 }

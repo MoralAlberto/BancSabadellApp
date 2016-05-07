@@ -9,56 +9,31 @@
 import Foundation
 import UIKit
 
+protocol BancSabadellCellViewModelDelegate {
+    func updateViews()
+}
+
 class BancSabadellCellViewModel: NSObject {
     
-    var article: BancSabadellModel?
+    var account: BancSabadellModel?
     
-    var id: String?
-    var summary: String?
+    var delegate: BancSabadellCellViewModelDelegate!
     var indexPath: NSIndexPath?
-    var title: String?
-    var sourceURL: String?
-    var baseURL: NSURL?
-    var favorite: String?
-    var nameImageFavorite: String?
-    
-    dynamic var isReady = ""
-
+    var balance: String?
+    var descriptionAccount: String?
+    var producto: String?
+    var iban: String?
     
     func configureWithArticle(article: BancSabadellModel, atIndexPath indexPath: NSIndexPath) {
-        self.article = article
+        self.account = article
         
-        self.summary = article.summary
+        self.balance = article.balance
         self.indexPath = indexPath
-        self.title = article.title
-        self.sourceURL = article.sourceURL
-        self.favorite = article.favorite
-        self.id = article.id
+        self.descriptionAccount = article.descriptionAccount
+        self.producto = article.producto
+        self.iban = article.iban
         
-        if (article.favorite == "0") {
-            self.nameImageFavorite = "favorite"
-        } else {
-            self.nameImageFavorite = "favorite_on"
-        }
-        
-        self.baseURL = NSURL(string: article.sourceURL!)
-        
-        
-        //  Notify the view
-        self.isReady = "Valor"
+        delegate.updateViews()
     }
     
-    
-    func addThisArticleToFav() {
-//        print("View model")
-//        
-//        let favOrNot: Bool = (self.favorite == "0") ? true : false
-//        
-//        PocketManager.favoriteArticle(favOrNot, articleID: self.id!)
-//            .startWithNext { value in
-//                print("receive response \(value)")
-//                self.favorite = value
-//                self.isReady = "Valor"
-//        }
-    }
 }

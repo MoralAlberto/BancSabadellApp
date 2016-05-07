@@ -9,10 +9,8 @@
 import Foundation
 
 class BancSabadellModel: NSObject {
-    var id: String?
-    var title: String?
-    var summary: String?
-    var imageURL: String?
-    var sourceURL: String?
-    var favorite: String?
+    var balance: String?
+    var descriptionAccount: String?
+    var producto: String?
+    var iban: String?
 }

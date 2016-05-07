@@ -15,6 +15,8 @@ class RootViewController: SLKTextViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        viewModel.delegate = self
+        
         //  Custom white background status bar
         let view = UIView(frame: CGRect(x: 0.0, y: 0.0, width: UIScreen.mainScreen().bounds.size.width, height: 20.0))
         view.backgroundColor = UIColor.whiteColor()
@@ -96,9 +98,9 @@ class RootViewController: SLKTextViewController {
         self.textView.refreshFirstResponder();
         
         let message = BancSabadellModel()
-        message.title = self.textView.text
-        message.summary = "NOOO"
-        message.sourceURL = "www.google.com"
+//        message.title = self.textView.text
+//        message.summary = "NOOO"
+//        message.sourceURL = "www.google.com"
         
         
         let indexPath = NSIndexPath(forItem: 0, inSection: 0)
@@ -141,7 +143,15 @@ class RootViewController: SLKTextViewController {
         let text = viewModel.searchResult[indexPath.row];
         cell?.viewModel.configureWithOption((text as? String)!, atIndexPath: indexPath)
         
+        
         return cell!
     }
     
+}
+
+extension RootViewController: RootViewModelDelegate {
+    
+    func updateView() {
+        self.tableView?.reloadData()
+    }
 }
