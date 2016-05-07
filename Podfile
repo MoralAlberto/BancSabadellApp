@@ -8,3 +8,17 @@ pod 'PocketAPI', :git => 'https://github.com/Pocket/Pocket-ObjC-SDK', :commit =>
 
 pod 'Haneke', '~> 1.0'
 pod 'Prephirences'
+
+def testing_pods
+    pod 'Quick'
+    pod 'Nimble'
+end
+
+target 'BancAppTests' do
+    testing_pods
+end
+
+target 'BancAppUITests' do
+    testing_pods
+end
+

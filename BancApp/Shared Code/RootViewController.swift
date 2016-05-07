@@ -100,9 +100,6 @@ class RootViewController: SLKTextViewController {
         self.textView.refreshFirstResponder();
         
         let message = BancSabadellModel()
-//        message.title = self.textView.text
-//        message.summary = "NOOO"
-//        message.sourceURL = "www.google.com"
         
         
         let indexPath = NSIndexPath(forItem: 0, inSection: 0)
