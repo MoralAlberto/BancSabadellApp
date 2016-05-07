@@ -15,6 +15,8 @@
 		<string>cuentasvista</string>
 		<key>APIPathProducts</key>
 		<string>productos</string>
+		<key>APIPathTargets</key>
+		<string>tarjetas</string>
 	</dict>
 </dict>
 </plist>

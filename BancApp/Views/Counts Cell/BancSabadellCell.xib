@@ -63,7 +63,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pocket" translatesAutoresizingMaskIntoConstraints="NO" id="X9Z-2k-6cP">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bancSabadell" translatesAutoresizingMaskIntoConstraints="NO" id="X9Z-2k-6cP">
                         <rect key="frame" x="6" y="8" width="22" height="22"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="22" id="APL-qF-dLa"/>
@@ -114,7 +114,7 @@
     </objects>
     <resources>
         <image name="arrow" width="13" height="20"/>
+        <image name="bancSabadell" width="611" height="535"/>
         <image name="input-bubble" width="34" height="18"/>
-        <image name="pocket" width="68" height="64"/>
     </resources>
 </document>

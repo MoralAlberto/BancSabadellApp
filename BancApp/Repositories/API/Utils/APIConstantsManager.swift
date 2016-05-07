@@ -25,6 +25,7 @@ class APIConstants {
     static var ApiEndPoint = "APIEndPoint"
     static var ApiPathAccounts = "APIPaths.APIPathAccounts"
     static var ApiPathProducts = "APIPaths.APIPathProducts"
+    static var ApiPathTargets = "APIPaths.APIPathTargets"
     static var ApiPathOAuthRefreshToken = "APIOAuth.APIPathRefreshToken"
     
     static var valueDict: NSDictionary = APIConstantsManager.setupPlist() as NSDictionary
@@ -43,5 +44,9 @@ class APIConstants {
     
     static func APIPathOAuthRefreshToken() -> String? {
         return valueDict.valueForKeyPath(ApiPathOAuthRefreshToken) as? String
+    }
+    
+    static func APIPathTargets() -> String? {
+        return valueDict.valueForKeyPath(ApiPathTargets) as? String
     }
 }

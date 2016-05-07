@@ -54,6 +54,8 @@ class RootViewController: SLKTextViewController {
         //  Register prefixes to show autocompletion
         self.registerPrefixesForAutoCompletion(viewModel.detectAutocompletion)
         
+        //  API CALL
+        self.viewModel.getAccounts()
     }
     
 

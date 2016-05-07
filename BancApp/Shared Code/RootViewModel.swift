@@ -24,7 +24,7 @@ class RootViewModel: NSObject {
     let estimateRowHeight: CGFloat = 85.0
     
     // Override Variables
-    var options: NSArray = ["Cuentas", "Cuenta #1", "Cuenta #2"]
+    var options: NSArray = ["Cuentas", "Productos", "Cuenta #2"]
     //  Symbol to Detect Autocompletion
     var detectAutocompletion: [String] = ["#"]
     
@@ -74,24 +74,10 @@ class RootViewModel: NSObject {
             switch optionName {
             case "Cuentas":
                 print("Option #1")
-                let accountResource: Resource<AccountsModel> = Resource(pathComponent: "\(APIConstants.APIEndPoint()!+APIConstants.APIPathAccounts()!)")
-                accountResource.loadAsynchronous(AccountsModel.self) { x in
-                    print(x)
-                    
-                    for account in x.data! {
-                        let newAccount = BancSabadellModel()
-                        newAccount.balance = account.balance
-                        newAccount.descriptionAccount = account.description
-                        newAccount.iban = account.iban
-                        newAccount.producto = account.producto
-                        
-                        self.messages.append(newAccount)
-                    }
-                    
-                    self.delegate.updateView()
-                }
-            case "Cuenta #1":
+                self.getAccounts()
+            case "Productos":
                 print("Option #2")
+                self.getCards()
             case "Cuenta #2":
                 print("Option #3")
             default:
@@ -100,5 +86,46 @@ class RootViewModel: NSObject {
         }
         
         return optionName
+    }
+}
+
+//MARK: API calls
+extension RootViewModel {
+    func getAccounts() {
+        let accountResource: Resource<AccountsModel> = Resource(pathComponent: "\(APIConstants.APIEndPoint()!+APIConstants.APIPathAccounts()!)")
+        accountResource.loadAsynchronous(AccountsModel.self) { x in
+            print(x)
+            
+            for account in x.data! {
+                let newAccount = BancSabadellModel()
+                newAccount.balance = account.balance
+                newAccount.descriptionAccount = account.description
+                newAccount.iban = account.iban
+                newAccount.producto = account.producto
+                
+                self.messages.append(newAccount)
+            }
+            
+            self.delegate.updateView()
+        }
+    }
+    
+    func getCards() {
+        let accountResource: Resource<AccountsModel> = Resource(pathComponent: "\(APIConstants.APIEndPoint()!+APIConstants.APIPathTargets()!)")
+        accountResource.loadAsynchronous(AccountsModel.self) { x in
+            print(x)
+            
+            for account in x.data! {
+                let newAccount = BancSabadellModel()
+                newAccount.balance = account.balance
+                newAccount.descriptionAccount = account.description
+                newAccount.iban = account.iban
+                newAccount.producto = account.producto
+                
+                self.messages.append(newAccount)
+            }
+            
+            self.delegate.updateView()
+        }
     }
 }

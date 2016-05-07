@@ -16,7 +16,6 @@
 		390A15D41CDB8899007FFF21 /* OptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390A15CE1CDB8899007FFF21 /* OptionCell.xib */; };
 		390A15D51CDB8899007FFF21 /* OptionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15CF1CDB8899007FFF21 /* OptionCellViewModel.swift */; };
 		390A15DD1CDB88F1007FFF21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15DC1CDB88F1007FFF21 /* ViewController.swift */; };
-		390A15DF1CDB8A80007FFF21 /* BancSabadellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15DE1CDB8A80007FFF21 /* BancSabadellManager.swift */; };
 		390A15E31CDB8D27007FFF21 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390A15E21CDB8D27007FFF21 /* Alamofire.framework */; };
 		390A15E41CDB8D27007FFF21 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 390A15E21CDB8D27007FFF21 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		390A15E71CDB8D3A007FFF21 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390A15E61CDB8D3A007FFF21 /* OAuthSwift.framework */; };
@@ -80,7 +79,6 @@
 		390A15CE1CDB8899007FFF21 /* OptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionCell.xib; sourceTree = "<group>"; };
 		390A15CF1CDB8899007FFF21 /* OptionCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCellViewModel.swift; sourceTree = "<group>"; };
 		390A15DC1CDB88F1007FFF21 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		390A15DE1CDB8A80007FFF21 /* BancSabadellManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellManager.swift; sourceTree = "<group>"; };
 		390A15E21CDB8D27007FFF21 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		390A15E61CDB8D3A007FFF21 /* OAuthSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = OAuthSwift.framework; path = "/Users/Moral/Library/Developer/Xcode/DerivedData/BancApp-etkxdvpjhdbthsblbartekoututn/Build/Products/Debug-iphonesimulator/OAuthSwift.framework"; sourceTree = "<absolute>"; };
 		390A15EB1CDB8EF5007FFF21 /* APIConstants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIConstants.plist; sourceTree = "<group>"; };
@@ -163,6 +161,7 @@
 			children = (
 				390A15C81CDB8899007FFF21 /* Counts Cell */,
 				390A15CC1CDB8899007FFF21 /* Options */,
+				392230A51CDDFDA300380F4E /* Products Cell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,7 +197,6 @@
 		390A15DA1CDB88DA007FFF21 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				390A15DE1CDB8A80007FFF21 /* BancSabadellManager.swift */,
 				390A15F41CDB8F1E007FFF21 /* Resource.swift */,
 				390A15EA1CDB8EF5007FFF21 /* Utils */,
 				390A15EF1CDB8F18007FFF21 /* Models */,
@@ -240,6 +238,13 @@
 				390A15F11CDB8F18007FFF21 /* AccountsModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		392230A51CDDFDA300380F4E /* Products Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Products Cell";
 			sourceTree = "<group>";
 		};
 		399022CC1CDB41A70095850A = {
@@ -532,7 +537,6 @@
 				390A15C31CDB82B8007FFF21 /* BubbleCustomView.swift in Sources */,
 				390A15F21CDB8F18007FFF21 /* AccountModel.swift in Sources */,
 				390A15F31CDB8F18007FFF21 /* AccountsModel.swift in Sources */,
-				390A15DF1CDB8A80007FFF21 /* BancSabadellManager.swift in Sources */,
 				390A15D21CDB8899007FFF21 /* BancSabadellCellViewModel.swift in Sources */,
 				3990230D1CDB56BF0095850A /* RootViewModel.swift in Sources */,
 				390A15D01CDB8899007FFF21 /* BancSabadellCell.swift in Sources */,

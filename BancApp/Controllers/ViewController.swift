@@ -13,19 +13,7 @@ class ViewController: RootViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.viewModel.options = ["Cuentas", "Cuenta #1", "Cuenta #2"]
-//        self.viewModel.detectAutocompletion = ["#"]
-        
-        
-        let accountResource: Resource<AccountsModel> = Resource(pathComponent: "\(APIConstants.APIEndPoint()!+APIConstants.APIPathAccounts()!)")
-        accountResource.loadAsynchronous(AccountsModel.self) { x in
-            print(x)
-        }
 
-        
-        
-        
-        
     }
 }
 

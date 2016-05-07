@@ -37,6 +37,5 @@ class BancSabadellCell: UITableViewCell, BancSabadellCellViewModelDelegate {
         self.indexPath = viewModel.indexPath
         self.summary.text = viewModel.account!.descriptionAccount
         self.source.text = viewModel.account?.iban
-        
     }
 }
