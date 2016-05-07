@@ -4,10 +4,18 @@
 <dict>
 	<key>APIEndPoint</key>
 	<string>https://developers.bancsabadell.com/ResourcesServerBS/oauthservices/v1.0.0/</string>
+	<key>APIClientID</key>
+	<string>CLI1455983911404GzJ5rZJOV2sH37vNncxsPvRAofHTff4MGzR6K02K84764Y</string>
+	<key>APIClientSecret</key>
+	<string>C4ligul4s</string>
 	<key>APIOAuth</key>
 	<dict>
 		<key>APIPathRefreshToken</key>
 		<string>oauth/token</string>
+		<key>APIAuthorizeURL</key>
+		<string>https://developers.bancsabadell.com/AuthServerBS/oauth/authorize</string>
+		<key>APIAccessTokenURL</key>
+		<string>https://developers.bancsabadell.com/AuthServerBS/oauth/token</string>
 	</dict>
 	<key>APIPaths</key>
 	<dict>

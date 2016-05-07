@@ -23,15 +23,30 @@ class APIConstantsManager {
 class APIConstants {
     
     static var ApiEndPoint = "APIEndPoint"
+    static var ApiClientID = "APIClientID"
+    static var ApiClientSecret = "APIClientSecret"
+    
     static var ApiPathAccounts = "APIPaths.APIPathAccounts"
     static var ApiPathProducts = "APIPaths.APIPathProducts"
     static var ApiPathTargets = "APIPaths.APIPathTargets"
+    
     static var ApiPathOAuthRefreshToken = "APIOAuth.APIPathRefreshToken"
+    static var ApiPathOAuthURL = "APIOAuth.APIAuthorizeURL"
+    static var ApiPathOAuthURLAccessToken = "APIOAuth.APIAccessTokenURL"
+    
     
     static var valueDict: NSDictionary = APIConstantsManager.setupPlist() as NSDictionary
     
     static func APIEndPoint() -> String? {
         return valueDict[ApiEndPoint] as? String
+    }
+    
+    static func APIClientID() -> String? {
+        return valueDict[ApiClientID] as? String
+    }
+    
+    static func APIClientSecret() -> String? {
+        return valueDict[ApiClientSecret] as? String
     }
     
     static func APIPathAccounts() -> String? {
@@ -48,5 +63,13 @@ class APIConstants {
     
     static func APIPathTargets() -> String? {
         return valueDict.valueForKeyPath(ApiPathTargets) as? String
+    }
+    
+    static func APIPathOAuthURLAccessToken() -> String? {
+        return valueDict.valueForKeyPath(ApiPathOAuthURLAccessToken) as? String
+    }
+    
+    static func APIPathOAuthURL() -> String? {
+        return valueDict.valueForKeyPath(ApiPathOAuthURL) as? String
     }
 }
