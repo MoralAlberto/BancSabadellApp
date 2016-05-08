@@ -28,6 +28,7 @@
 		3929AC891CDF304F00D6317E /* SlackTextViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3929AC881CDF304F00D6317E /* SlackTextViewController.framework */; };
 		3929AC8A1CDF304F00D6317E /* SlackTextViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3929AC881CDF304F00D6317E /* SlackTextViewController.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3929AC8C1CDF310000D6317E /* SlackTextViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3929AC881CDF304F00D6317E /* SlackTextViewController.framework */; };
+		3929AC8E1CDF376D00D6317E /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 3929AC8D1CDF376D00D6317E /* response.json */; };
 		399022D91CDB41A80095850A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399022D81CDB41A80095850A /* AppDelegate.swift */; };
 		399022DE1CDB41A80095850A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399022DC1CDB41A80095850A /* Main.storyboard */; };
 		399022E01CDB41A80095850A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399022DF1CDB41A80095850A /* Assets.xcassets */; };
@@ -96,6 +97,7 @@
 		390A15F11CDB8F18007FFF21 /* AccountsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsModel.swift; sourceTree = "<group>"; };
 		390A15F41CDB8F1E007FFF21 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		3929AC881CDF304F00D6317E /* SlackTextViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlackTextViewController.framework; path = Carthage/Build/iOS/SlackTextViewController.framework; sourceTree = "<group>"; };
+		3929AC8D1CDF376D00D6317E /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 		399022D51CDB41A80095850A /* BancApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BancApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		399022D81CDB41A80095850A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		399022DD1CDB41A80095850A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 		399022EC1CDB41A80095850A /* BancAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				3929AC8D1CDF376D00D6317E /* response.json */,
 				399022ED1CDB41A80095850A /* BancAppTests.swift */,
 				399022EF1CDB41A80095850A /* Info.plist */,
 			);
@@ -476,6 +479,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3929AC8E1CDF376D00D6317E /* response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

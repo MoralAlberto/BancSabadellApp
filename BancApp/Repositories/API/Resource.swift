@@ -47,8 +47,9 @@ extension Resource {
             parameters: [:],
             headers: header,
             success: { (data, response) in
-                let json = try? NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions())
+                guard let json = try? NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) else { return }
                 let result = Mapper<A>().map(json)
+                print(json)
                 callback(result!)
         }) { (error) in
             //  Si hay error, haz la lógica para refrescar el Token

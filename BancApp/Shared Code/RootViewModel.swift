@@ -91,16 +91,21 @@ class RootViewModel: NSObject {
 extension RootViewModel {
     func getAccounts() {
         let accountResource: Resource<AccountsModel> = Resource(pathComponent: "\(APIConstants.APIEndPoint()!+APIConstants.APIPathAccounts()!)")
-        createCall(withResource: accountResource)
+        createCall(withResource: accountResource) { boolean in
+            print("Finished? \(boolean)")
+        }
+
     }
     
     func getCards() {
         let accountResource: Resource<AccountsModel> = Resource(pathComponent: "\(APIConstants.APIEndPoint()!+APIConstants.APIPathTargets()!)")
-        createCall(withResource: accountResource)
+        createCall(withResource: accountResource) { boolean in
+            print("Finished? \(boolean)")
+        }
     }
     
     //  API Helpers
-    func createCall(withResource accountResource: Resource<AccountsModel>) {
+    func createCall(withResource accountResource: Resource<AccountsModel>, completionBlock: (Bool)->()) {
         accountResource.loadAsynchronous(AccountsModel.self) { x in
             print(x)
             
@@ -114,7 +119,8 @@ extension RootViewModel {
                 self.messages.append(newAccount)
             }
             
-            self.delegate.updateView()
+            self.delegate?.updateView()
+            completionBlock(true)
         }
     }
 }

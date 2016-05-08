@@ -1,0 +1,28 @@
+{
+    "data": [
+             {
+             "propietario": "&UPJURID -  &LPJURID",
+             "descripcion": "CUENTA CORRIENTE",
+             "usuario": "47884764Y",
+             "iban": "ES00810000000000000001",
+             "balance": "154.314,99",
+             "producto": "CC",
+             "numeroProducto": "00810000000000001433",
+             "numeroProductoCodificado": "00810000000000000001"
+             },
+             {
+             "propietario": "&RNOMBRE &DPRIAPE I &. &MPRIAPE",
+             "descripcion": "CUENTA EXPANSIÓN",
+             "usuario": "47884764Y",
+             "iban": "ES00810000000000000002",
+             "balance": "27.912,74",
+             "producto": "CC",
+             "numeroProducto": "00810000000000001434",
+             "numeroProductoCodificado": "00810000000000000002"
+             }
+             ],
+    "head": {
+        "fechaOperacion": "2016-05-08 19:45:22",
+        "codigoServicio": "SERV_CUE01"
+    }
+}
