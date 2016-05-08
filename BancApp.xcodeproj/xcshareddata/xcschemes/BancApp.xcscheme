@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "399022E81CDB41A80095850A"
+               BuildableName = "BancAppTests.xctest"
+               BlueprintName = "BancAppTests"
+               ReferencedContainer = "container:BancApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "399022D41CDB41A80095850A"
+            BuildableName = "BancApp.app"
+            BlueprintName = "BancApp"
+            ReferencedContainer = "container:BancApp.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

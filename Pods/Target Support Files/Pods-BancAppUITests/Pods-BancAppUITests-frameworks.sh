@@ -86,16 +86,16 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-BancAppUITests/Haneke.framework"
   install_framework "Pods-BancAppUITests/OAuthSwift.framework"
-  install_framework "Pods-BancAppUITests/PocketAPI.framework"
   install_framework "Pods-BancAppUITests/Prephirences.framework"
   install_framework "Pods-BancAppUITests/Nimble.framework"
+  install_framework "Pods-BancAppUITests/OHHTTPStubs.framework"
   install_framework "Pods-BancAppUITests/Quick.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-BancAppUITests/Haneke.framework"
   install_framework "Pods-BancAppUITests/OAuthSwift.framework"
-  install_framework "Pods-BancAppUITests/PocketAPI.framework"
   install_framework "Pods-BancAppUITests/Prephirences.framework"
   install_framework "Pods-BancAppUITests/Nimble.framework"
+  install_framework "Pods-BancAppUITests/OHHTTPStubs.framework"
   install_framework "Pods-BancAppUITests/Quick.framework"
 fi

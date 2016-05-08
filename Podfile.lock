@@ -2,7 +2,19 @@ PODS:
   - Haneke (1.0.2)
   - Nimble (4.0.1)
   - OAuthSwift (0.5.2)
-  - PocketAPI (1.0.3)
+  - OHHTTPStubs (5.0.0):
+    - OHHTTPStubs/Default (= 5.0.0)
+  - OHHTTPStubs/Core (5.0.0)
+  - OHHTTPStubs/Default (5.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (5.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (5.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (5.0.0)
   - Prephirences (2.2.0):
     - Prephirences/Core (= 2.2.0)
     - Prephirences/Keys (= 2.2.0)
@@ -15,25 +27,15 @@ DEPENDENCIES:
   - Haneke (~> 1.0)
   - Nimble
   - OAuthSwift
-  - PocketAPI (from `https://github.com/Pocket/Pocket-ObjC-SDK`, commit `08b4cd79385f4084de70e797567937d568205ffa`)
+  - OHHTTPStubs
   - Prephirences
   - Quick
-
-EXTERNAL SOURCES:
-  PocketAPI:
-    :commit: 08b4cd79385f4084de70e797567937d568205ffa
-    :git: https://github.com/Pocket/Pocket-ObjC-SDK
-
-CHECKOUT OPTIONS:
-  PocketAPI:
-    :commit: 08b4cd79385f4084de70e797567937d568205ffa
-    :git: https://github.com/Pocket/Pocket-ObjC-SDK
 
 SPEC CHECKSUMS:
   Haneke: 01454a67322faa0dd9d81fc0f447885044e71521
   Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
   OAuthSwift: 1ef042d4362e755e24a78f158d817245641a5d24
-  PocketAPI: f65f80eee2b05d28aeecf711b0f5b87ee2be3e28
+  OHHTTPStubs: a5d2e9eea07869d42ec03338325f398bc520e159
   Prephirences: 068feb420ceeff5c8a4277bae5d14a15b42e60b9
   Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
 

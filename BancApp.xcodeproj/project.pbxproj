@@ -1,2014 +1,935 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0222EEA3FAACA3191CE752CD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-BancAppTests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-BancAppTests/Pods-BancAppTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09FA14F25BFBF02507AE9273</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_BancAppUITests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0E28AEFFE69979FBE0A996F8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>133A38672C1B5EEACDCE2CFE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-BancAppTests/Pods-BancAppTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>14D93AC90B5FFD54F4BE80EF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-BancAppUITests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-BancAppUITests/Pods-BancAppUITests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1F4390988AD7B3C68A320E74</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-BancAppTests/Pods-BancAppTests-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>2C844FF44EDAD981E1FDF48F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E7AF6107DE1576428B28E485</string>
-				<string>9E7A8CC0D17EEEA14976ED5C</string>
-				<string>09FA14F25BFBF02507AE9273</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15C11CDB82B8007FFF21</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>390A15C21CDB82B8007FFF21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15C21CDB82B8007FFF21</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BubbleCustomView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15C31CDB82B8007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15C21CDB82B8007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>390A15C41CDB8315007FFF21</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>390A15C51CDB8315007FFF21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Models</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15C51CDB8315007FFF21</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BancSabadellModel.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15C61CDB8315007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15C51CDB8315007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>390A15C71CDB8899007FFF21</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>390A15C81CDB8899007FFF21</string>
-				<string>390A15CC1CDB8899007FFF21</string>
-				<string>392230A51CDDFDA300380F4E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15C81CDB8899007FFF21</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>390A15C91CDB8899007FFF21</string>
-				<string>390A15CA1CDB8899007FFF21</string>
-				<string>390A15CB1CDB8899007FFF21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Counts Cell</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15C91CDB8899007FFF21</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BancSabadellCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15CA1CDB8899007FFF21</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>BancSabadellCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15CB1CDB8899007FFF21</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BancSabadellCellViewModel.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15CC1CDB8899007FFF21</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>390A15CD1CDB8899007FFF21</string>
-				<string>390A15CE1CDB8899007FFF21</string>
-				<string>390A15CF1CDB8899007FFF21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Options</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15CD1CDB8899007FFF21</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>OptionCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15CE1CDB8899007FFF21</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>OptionCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15CF1CDB8899007FFF21</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>OptionCellViewModel.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15D01CDB8899007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15C91CDB8899007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>390A15D11CDB8899007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15CA1CDB8899007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>390A15D21CDB8899007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15CB1CDB8899007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>390A15D31CDB8899007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15CD1CDB8899007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>390A15D41CDB8899007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15CE1CDB8899007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>390A15D51CDB8899007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15CF1CDB8899007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>390A15D91CDB88DA007FFF21</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>390A15DA1CDB88DA007FFF21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Repositories</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15DA1CDB88DA007FFF21</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>390A15F41CDB8F1E007FFF21</string>
-				<string>390A15EA1CDB8EF5007FFF21</string>
-				<string>390A15EF1CDB8F18007FFF21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>API</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15DB1CDB88F1007FFF21</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>390A15DC1CDB88F1007FFF21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Controllers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15DC1CDB88F1007FFF21</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15DD1CDB88F1007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15DC1CDB88F1007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>390A15E21CDB8D27007FFF21</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Alamofire.framework</string>
-			<key>path</key>
-			<string>Carthage/Build/iOS/Alamofire.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15E31CDB8D27007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15E21CDB8D27007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>390A15E41CDB8D27007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15E21CDB8D27007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>CodeSignOnCopy</string>
-					<string>RemoveHeadersOnCopy</string>
-				</array>
-			</dict>
-		</dict>
-		<key>390A15E51CDB8D28007FFF21</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string></string>
-			<key>dstSubfolderSpec</key>
-			<string>10</string>
-			<key>files</key>
-			<array>
-				<string>390A15E81CDB8D3A007FFF21</string>
-				<string>390A15E41CDB8D27007FFF21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>name</key>
-			<string>Embed Frameworks</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>390A15E61CDB8D3A007FFF21</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAuthSwift.framework</string>
-			<key>path</key>
-			<string>/Users/Moral/Library/Developer/Xcode/DerivedData/BancApp-etkxdvpjhdbthsblbartekoututn/Build/Products/Debug-iphonesimulator/OAuthSwift.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;absolute&gt;</string>
-		</dict>
-		<key>390A15E71CDB8D3A007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15E61CDB8D3A007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>390A15E81CDB8D3A007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15E61CDB8D3A007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>CodeSignOnCopy</string>
-					<string>RemoveHeadersOnCopy</string>
-				</array>
-			</dict>
-		</dict>
-		<key>390A15E91CDB8D46007FFF21</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>390A15E61CDB8D3A007FFF21</string>
-				<string>390A15E21CDB8D27007FFF21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>path</key>
-			<string>..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15EA1CDB8EF5007FFF21</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>390A15EB1CDB8EF5007FFF21</string>
-				<string>390A15EC1CDB8EF5007FFF21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Utils</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15EB1CDB8EF5007FFF21</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>APIConstants.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15EC1CDB8EF5007FFF21</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>APIConstantsManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15ED1CDB8EF5007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15EB1CDB8EF5007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>390A15EE1CDB8EF5007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15EC1CDB8EF5007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>390A15EF1CDB8F18007FFF21</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>390A15F01CDB8F18007FFF21</string>
-				<string>390A15F11CDB8F18007FFF21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Models</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15F01CDB8F18007FFF21</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AccountModel.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15F11CDB8F18007FFF21</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AccountsModel.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15F21CDB8F18007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15F01CDB8F18007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>390A15F31CDB8F18007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15F11CDB8F18007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>390A15F41CDB8F1E007FFF21</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Resource.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>390A15F51CDB8F1E007FFF21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>390A15F41CDB8F1E007FFF21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>392230A51CDDFDA300380F4E</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Products Cell</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022CC1CDB41A70095850A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>399022D71CDB41A80095850A</string>
-				<string>399022EC1CDB41A80095850A</string>
-				<string>399022F71CDB41A80095850A</string>
-				<string>399022D61CDB41A80095850A</string>
-				<string>DEAAD206F22B36544C4DBFC2</string>
-				<string>2C844FF44EDAD981E1FDF48F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022CD1CDB41A70095850A</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Alberto Moral</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>399022D41CDB41A80095850A</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-					</dict>
-					<key>399022E81CDB41A80095850A</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>TestTargetID</key>
-						<string>399022D41CDB41A80095850A</string>
-					</dict>
-					<key>399022F31CDB41A80095850A</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>TestTargetID</key>
-						<string>399022D41CDB41A80095850A</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>399022D01CDB41A70095850A</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>399022CC1CDB41A70095850A</string>
-			<key>productRefGroup</key>
-			<string>399022D61CDB41A80095850A</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>399022D41CDB41A80095850A</string>
-				<string>399022E81CDB41A80095850A</string>
-				<string>399022F31CDB41A80095850A</string>
-			</array>
-		</dict>
-		<key>399022D01CDB41A70095850A</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>399022FB1CDB41A80095850A</string>
-				<string>399022FC1CDB41A80095850A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>399022D11CDB41A80095850A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>399022D91CDB41A80095850A</string>
-				<string>390A15D31CDB8899007FFF21</string>
-				<string>390A15EE1CDB8EF5007FFF21</string>
-				<string>390A15F51CDB8F1E007FFF21</string>
-				<string>390A15C61CDB8315007FFF21</string>
-				<string>390A15DD1CDB88F1007FFF21</string>
-				<string>390A15C31CDB82B8007FFF21</string>
-				<string>390A15F21CDB8F18007FFF21</string>
-				<string>390A15F31CDB8F18007FFF21</string>
-				<string>390A15D21CDB8899007FFF21</string>
-				<string>3990230D1CDB56BF0095850A</string>
-				<string>390A15D01CDB8899007FFF21</string>
-				<string>3990230B1CDB56A30095850A</string>
-				<string>390A15D51CDB8899007FFF21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>399022D21CDB41A80095850A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C55B164B42EE15B28BB6BF19</string>
-				<string>390A15E31CDB8D27007FFF21</string>
-				<string>390A15E71CDB8D3A007FFF21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>399022D31CDB41A80095850A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>390A15D41CDB8899007FFF21</string>
-				<string>390A15ED1CDB8EF5007FFF21</string>
-				<string>399022E31CDB41A80095850A</string>
-				<string>399022E01CDB41A80095850A</string>
-				<string>399022DE1CDB41A80095850A</string>
-				<string>390A15D11CDB8899007FFF21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>399022D41CDB41A80095850A</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>399022FD1CDB41A80095850A</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E8097FD1B1EC2D570DFA2E04</string>
-				<string>399022D11CDB41A80095850A</string>
-				<string>399022D21CDB41A80095850A</string>
-				<string>399022D31CDB41A80095850A</string>
-				<string>C4416CEE297B2E5A69DB0472</string>
-				<string>AB28BF7830E662635151D2E8</string>
-				<string>399023081CDB54E70095850A</string>
-				<string>390A15E51CDB8D28007FFF21</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BancApp</string>
-			<key>productName</key>
-			<string>BancApp</string>
-			<key>productReference</key>
-			<string>399022D51CDB41A80095850A</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>399022D51CDB41A80095850A</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>BancApp.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>399022D61CDB41A80095850A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>399022D51CDB41A80095850A</string>
-				<string>399022E91CDB41A80095850A</string>
-				<string>399022F41CDB41A80095850A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022D71CDB41A80095850A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>399022D81CDB41A80095850A</string>
-				<string>390A15DB1CDB88F1007FFF21</string>
-				<string>399023091CDB56A30095850A</string>
-				<string>390A15C41CDB8315007FFF21</string>
-				<string>390A15C71CDB8899007FFF21</string>
-				<string>390A15D91CDB88DA007FFF21</string>
-				<string>390A15E91CDB8D46007FFF21</string>
-				<string>399022DC1CDB41A80095850A</string>
-				<string>399022DF1CDB41A80095850A</string>
-				<string>399022E11CDB41A80095850A</string>
-				<string>399022E41CDB41A80095850A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BancApp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022D81CDB41A80095850A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022D91CDB41A80095850A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>399022D81CDB41A80095850A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>399022DC1CDB41A80095850A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>399022DD1CDB41A80095850A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022DD1CDB41A80095850A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022DE1CDB41A80095850A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>399022DC1CDB41A80095850A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>399022DF1CDB41A80095850A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022E01CDB41A80095850A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>399022DF1CDB41A80095850A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>399022E11CDB41A80095850A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>399022E21CDB41A80095850A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022E21CDB41A80095850A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022E31CDB41A80095850A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>399022E11CDB41A80095850A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>399022E41CDB41A80095850A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022E51CDB41A80095850A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>399022EE1CDB41A80095850A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>399022E61CDB41A80095850A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E735C88ACEBC8CD6E5013EA2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>399022E71CDB41A80095850A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>399022E81CDB41A80095850A</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>399023001CDB41A80095850A</string>
-			<key>buildPhases</key>
-			<array>
-				<string>CC4BD515478286059514B206</string>
-				<string>399022E51CDB41A80095850A</string>
-				<string>399022E61CDB41A80095850A</string>
-				<string>399022E71CDB41A80095850A</string>
-				<string>1F4390988AD7B3C68A320E74</string>
-				<string>133A38672C1B5EEACDCE2CFE</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>399022EB1CDB41A80095850A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BancAppTests</string>
-			<key>productName</key>
-			<string>BancAppTests</string>
-			<key>productReference</key>
-			<string>399022E91CDB41A80095850A</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>399022E91CDB41A80095850A</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>BancAppTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>399022EA1CDB41A80095850A</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>399022CD1CDB41A70095850A</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>399022D41CDB41A80095850A</string>
-			<key>remoteInfo</key>
-			<string>BancApp</string>
-		</dict>
-		<key>399022EB1CDB41A80095850A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>399022D41CDB41A80095850A</string>
-			<key>targetProxy</key>
-			<string>399022EA1CDB41A80095850A</string>
-		</dict>
-		<key>399022EC1CDB41A80095850A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>399022ED1CDB41A80095850A</string>
-				<string>399022EF1CDB41A80095850A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BancAppTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022ED1CDB41A80095850A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BancAppTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022EE1CDB41A80095850A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>399022ED1CDB41A80095850A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>399022EF1CDB41A80095850A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022F01CDB41A80095850A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>399022F91CDB41A80095850A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>399022F11CDB41A80095850A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B068770985BD144B5999D59D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>399022F21CDB41A80095850A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>399022F31CDB41A80095850A</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>399023031CDB41A80095850A</string>
-			<key>buildPhases</key>
-			<array>
-				<string>9337E13166F49D215BA14B7E</string>
-				<string>399022F01CDB41A80095850A</string>
-				<string>399022F11CDB41A80095850A</string>
-				<string>399022F21CDB41A80095850A</string>
-				<string>61348E03AA5E608584956B16</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>399022F61CDB41A80095850A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BancAppUITests</string>
-			<key>productName</key>
-			<string>BancAppUITests</string>
-			<key>productReference</key>
-			<string>399022F41CDB41A80095850A</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>399022F41CDB41A80095850A</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>BancAppUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>399022F51CDB41A80095850A</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>399022CD1CDB41A70095850A</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>399022D41CDB41A80095850A</string>
-			<key>remoteInfo</key>
-			<string>BancApp</string>
-		</dict>
-		<key>399022F61CDB41A80095850A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>399022D41CDB41A80095850A</string>
-			<key>targetProxy</key>
-			<string>399022F51CDB41A80095850A</string>
-		</dict>
-		<key>399022F71CDB41A80095850A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>399022F81CDB41A80095850A</string>
-				<string>399022FA1CDB41A80095850A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BancAppUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022F81CDB41A80095850A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BancAppUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022F91CDB41A80095850A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>399022F81CDB41A80095850A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>399022FA1CDB41A80095850A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>399022FB1CDB41A80095850A</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>399022FC1CDB41A80095850A</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>399022FD1CDB41A80095850A</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>399022FE1CDB41A80095850A</string>
-				<string>399022FF1CDB41A80095850A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>399022FE1CDB41A80095850A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DD81678F94CA816975C380BB</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>$(PROJECT_DIR)/Carthage/Build/iOS</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>BancApp/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.albertomoral.BancApp</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>399022FF1CDB41A80095850A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0E28AEFFE69979FBE0A996F8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>$(PROJECT_DIR)/Carthage/Build/iOS</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>BancApp/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.albertomoral.BancApp</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>399023001CDB41A80095850A</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>399023011CDB41A80095850A</string>
-				<string>399023021CDB41A80095850A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>399023011CDB41A80095850A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0222EEA3FAACA3191CE752CD</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BancAppTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.albertomoral.BancAppTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/BancApp.app/BancApp</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>399023021CDB41A80095850A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7065A35C652465004B9D7371</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BancAppTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.albertomoral.BancAppTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/BancApp.app/BancApp</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>399023031CDB41A80095850A</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>399023041CDB41A80095850A</string>
-				<string>399023051CDB41A80095850A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>399023041CDB41A80095850A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>14D93AC90B5FFD54F4BE80EF</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>BancAppUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.albertomoral.BancAppUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>BancApp</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>399023051CDB41A80095850A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D799E90FF79B036E1431002D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>BancAppUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.albertomoral.BancAppUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>BancApp</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>399023081CDB54E70095850A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array>
-				<string>$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework</string>
-				<string>$(SRCROOT)/Carthage/Build/iOS/SlackTextViewController.framework</string>
-				<string>$(SRCROOT)/Carthage/Build/iOS/MGSwipeTableCell.framework</string>
-				<string>$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework</string>
-			</array>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>/usr/local/bin/carthage copy-frameworks</string>
-		</dict>
-		<key>399023091CDB56A30095850A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3990230A1CDB56A30095850A</string>
-				<string>3990230C1CDB56BF0095850A</string>
-				<string>390A15C11CDB82B8007FFF21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Shared Code</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3990230A1CDB56A30095850A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>RootViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3990230B1CDB56A30095850A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3990230A1CDB56A30095850A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3990230C1CDB56BF0095850A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>RootViewModel.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3990230D1CDB56BF0095850A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3990230C1CDB56BF0095850A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>61348E03AA5E608584956B16</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-BancAppUITests/Pods-BancAppUITests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>7065A35C652465004B9D7371</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-BancAppTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-BancAppTests/Pods-BancAppTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9337E13166F49D215BA14B7E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>9E7A8CC0D17EEEA14976ED5C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_BancAppTests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>AB28BF7830E662635151D2E8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>B068770985BD144B5999D59D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09FA14F25BFBF02507AE9273</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C4416CEE297B2E5A69DB0472</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>C55B164B42EE15B28BB6BF19</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E7AF6107DE1576428B28E485</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CC4BD515478286059514B206</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>D799E90FF79B036E1431002D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-BancAppUITests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-BancAppUITests/Pods-BancAppUITests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DD81678F94CA816975C380BB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DEAAD206F22B36544C4DBFC2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DD81678F94CA816975C380BB</string>
-				<string>0E28AEFFE69979FBE0A996F8</string>
-				<string>0222EEA3FAACA3191CE752CD</string>
-				<string>7065A35C652465004B9D7371</string>
-				<string>14D93AC90B5FFD54F4BE80EF</string>
-				<string>D799E90FF79B036E1431002D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E735C88ACEBC8CD6E5013EA2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9E7A8CC0D17EEEA14976ED5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E7AF6107DE1576428B28E485</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E8097FD1B1EC2D570DFA2E04</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>399022CD1CDB41A70095850A</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		390A15C31CDB82B8007FFF21 /* BubbleCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15C21CDB82B8007FFF21 /* BubbleCustomView.swift */; };
+		390A15C61CDB8315007FFF21 /* BancSabadellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15C51CDB8315007FFF21 /* BancSabadellModel.swift */; };
+		390A15D01CDB8899007FFF21 /* BancSabadellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15C91CDB8899007FFF21 /* BancSabadellCell.swift */; };
+		390A15D11CDB8899007FFF21 /* BancSabadellCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390A15CA1CDB8899007FFF21 /* BancSabadellCell.xib */; };
+		390A15D21CDB8899007FFF21 /* BancSabadellCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15CB1CDB8899007FFF21 /* BancSabadellCellViewModel.swift */; };
+		390A15D31CDB8899007FFF21 /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15CD1CDB8899007FFF21 /* OptionCell.swift */; };
+		390A15D41CDB8899007FFF21 /* OptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390A15CE1CDB8899007FFF21 /* OptionCell.xib */; };
+		390A15D51CDB8899007FFF21 /* OptionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15CF1CDB8899007FFF21 /* OptionCellViewModel.swift */; };
+		390A15DD1CDB88F1007FFF21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15DC1CDB88F1007FFF21 /* ViewController.swift */; };
+		390A15E31CDB8D27007FFF21 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390A15E21CDB8D27007FFF21 /* Alamofire.framework */; };
+		390A15E41CDB8D27007FFF21 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 390A15E21CDB8D27007FFF21 /* Alamofire.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		390A15E71CDB8D3A007FFF21 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390A15E61CDB8D3A007FFF21 /* OAuthSwift.framework */; };
+		390A15E81CDB8D3A007FFF21 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 390A15E61CDB8D3A007FFF21 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		390A15ED1CDB8EF5007FFF21 /* APIConstants.plist in Resources */ = {isa = PBXBuildFile; fileRef = 390A15EB1CDB8EF5007FFF21 /* APIConstants.plist */; };
+		390A15EE1CDB8EF5007FFF21 /* APIConstantsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15EC1CDB8EF5007FFF21 /* APIConstantsManager.swift */; };
+		390A15F21CDB8F18007FFF21 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15F01CDB8F18007FFF21 /* AccountModel.swift */; };
+		390A15F31CDB8F18007FFF21 /* AccountsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15F11CDB8F18007FFF21 /* AccountsModel.swift */; };
+		390A15F51CDB8F1E007FFF21 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A15F41CDB8F1E007FFF21 /* Resource.swift */; };
+		3929AC891CDF304F00D6317E /* SlackTextViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3929AC881CDF304F00D6317E /* SlackTextViewController.framework */; };
+		3929AC8A1CDF304F00D6317E /* SlackTextViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3929AC881CDF304F00D6317E /* SlackTextViewController.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3929AC8C1CDF310000D6317E /* SlackTextViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3929AC881CDF304F00D6317E /* SlackTextViewController.framework */; };
+		399022D91CDB41A80095850A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399022D81CDB41A80095850A /* AppDelegate.swift */; };
+		399022DE1CDB41A80095850A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399022DC1CDB41A80095850A /* Main.storyboard */; };
+		399022E01CDB41A80095850A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399022DF1CDB41A80095850A /* Assets.xcassets */; };
+		399022E31CDB41A80095850A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399022E11CDB41A80095850A /* LaunchScreen.storyboard */; };
+		399022EE1CDB41A80095850A /* BancAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399022ED1CDB41A80095850A /* BancAppTests.swift */; };
+		399022F91CDB41A80095850A /* BancAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399022F81CDB41A80095850A /* BancAppUITests.swift */; };
+		3990230B1CDB56A30095850A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990230A1CDB56A30095850A /* RootViewController.swift */; };
+		3990230D1CDB56BF0095850A /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990230C1CDB56BF0095850A /* RootViewModel.swift */; };
+		B068770985BD144B5999D59D /* Pods_BancAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FA14F25BFBF02507AE9273 /* Pods_BancAppUITests.framework */; };
+		C55B164B42EE15B28BB6BF19 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AF6107DE1576428B28E485 /* Pods.framework */; };
+		E735C88ACEBC8CD6E5013EA2 /* Pods_BancAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7A8CC0D17EEEA14976ED5C /* Pods_BancAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		399022EA1CDB41A80095850A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 399022CD1CDB41A70095850A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 399022D41CDB41A80095850A;
+			remoteInfo = BancApp;
+		};
+		399022F51CDB41A80095850A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 399022CD1CDB41A70095850A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 399022D41CDB41A80095850A;
+			remoteInfo = BancApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		390A15E51CDB8D28007FFF21 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3929AC8A1CDF304F00D6317E /* SlackTextViewController.framework in Embed Frameworks */,
+				390A15E81CDB8D3A007FFF21 /* OAuthSwift.framework in Embed Frameworks */,
+				390A15E41CDB8D27007FFF21 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0222EEA3FAACA3191CE752CD /* Pods-BancAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BancAppTests/Pods-BancAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		09FA14F25BFBF02507AE9273 /* Pods_BancAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BancAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E28AEFFE69979FBE0A996F8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		14D93AC90B5FFD54F4BE80EF /* Pods-BancAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BancAppUITests/Pods-BancAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		390A15C21CDB82B8007FFF21 /* BubbleCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleCustomView.swift; sourceTree = "<group>"; };
+		390A15C51CDB8315007FFF21 /* BancSabadellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellModel.swift; sourceTree = "<group>"; };
+		390A15C91CDB8899007FFF21 /* BancSabadellCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellCell.swift; sourceTree = "<group>"; };
+		390A15CA1CDB8899007FFF21 /* BancSabadellCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BancSabadellCell.xib; sourceTree = "<group>"; };
+		390A15CB1CDB8899007FFF21 /* BancSabadellCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellCellViewModel.swift; sourceTree = "<group>"; };
+		390A15CD1CDB8899007FFF21 /* OptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
+		390A15CE1CDB8899007FFF21 /* OptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionCell.xib; sourceTree = "<group>"; };
+		390A15CF1CDB8899007FFF21 /* OptionCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCellViewModel.swift; sourceTree = "<group>"; };
+		390A15DC1CDB88F1007FFF21 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		390A15E21CDB8D27007FFF21 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		390A15E61CDB8D3A007FFF21 /* OAuthSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = OAuthSwift.framework; path = "/Users/Moral/Library/Developer/Xcode/DerivedData/BancApp-etkxdvpjhdbthsblbartekoututn/Build/Products/Debug-iphonesimulator/OAuthSwift.framework"; sourceTree = "<absolute>"; };
+		390A15EB1CDB8EF5007FFF21 /* APIConstants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIConstants.plist; sourceTree = "<group>"; };
+		390A15EC1CDB8EF5007FFF21 /* APIConstantsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstantsManager.swift; sourceTree = "<group>"; };
+		390A15F01CDB8F18007FFF21 /* AccountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		390A15F11CDB8F18007FFF21 /* AccountsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsModel.swift; sourceTree = "<group>"; };
+		390A15F41CDB8F1E007FFF21 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		3929AC881CDF304F00D6317E /* SlackTextViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlackTextViewController.framework; path = Carthage/Build/iOS/SlackTextViewController.framework; sourceTree = "<group>"; };
+		399022D51CDB41A80095850A /* BancApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BancApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		399022D81CDB41A80095850A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		399022DD1CDB41A80095850A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		399022DF1CDB41A80095850A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		399022E21CDB41A80095850A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		399022E41CDB41A80095850A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		399022E91CDB41A80095850A /* BancAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BancAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		399022ED1CDB41A80095850A /* BancAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancAppTests.swift; sourceTree = "<group>"; };
+		399022EF1CDB41A80095850A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		399022F41CDB41A80095850A /* BancAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BancAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		399022F81CDB41A80095850A /* BancAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancAppUITests.swift; sourceTree = "<group>"; };
+		399022FA1CDB41A80095850A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3990230A1CDB56A30095850A /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		3990230C1CDB56BF0095850A /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		7065A35C652465004B9D7371 /* Pods-BancAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BancAppTests/Pods-BancAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9E7A8CC0D17EEEA14976ED5C /* Pods_BancAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BancAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D799E90FF79B036E1431002D /* Pods-BancAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BancAppUITests/Pods-BancAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DD81678F94CA816975C380BB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E7AF6107DE1576428B28E485 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		399022D21CDB41A80095850A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55B164B42EE15B28BB6BF19 /* Pods.framework in Frameworks */,
+				3929AC891CDF304F00D6317E /* SlackTextViewController.framework in Frameworks */,
+				390A15E31CDB8D27007FFF21 /* Alamofire.framework in Frameworks */,
+				390A15E71CDB8D3A007FFF21 /* OAuthSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		399022E61CDB41A80095850A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3929AC8C1CDF310000D6317E /* SlackTextViewController.framework in Frameworks */,
+				E735C88ACEBC8CD6E5013EA2 /* Pods_BancAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		399022F11CDB41A80095850A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B068770985BD144B5999D59D /* Pods_BancAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C844FF44EDAD981E1FDF48F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7AF6107DE1576428B28E485 /* Pods.framework */,
+				9E7A8CC0D17EEEA14976ED5C /* Pods_BancAppTests.framework */,
+				09FA14F25BFBF02507AE9273 /* Pods_BancAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		390A15C11CDB82B8007FFF21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				390A15C21CDB82B8007FFF21 /* BubbleCustomView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		390A15C41CDB8315007FFF21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				390A15C51CDB8315007FFF21 /* BancSabadellModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		390A15C71CDB8899007FFF21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				390A15C81CDB8899007FFF21 /* Counts Cell */,
+				390A15CC1CDB8899007FFF21 /* Options */,
+				392230A51CDDFDA300380F4E /* Products Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		390A15C81CDB8899007FFF21 /* Counts Cell */ = {
+			isa = PBXGroup;
+			children = (
+				390A15C91CDB8899007FFF21 /* BancSabadellCell.swift */,
+				390A15CA1CDB8899007FFF21 /* BancSabadellCell.xib */,
+				390A15CB1CDB8899007FFF21 /* BancSabadellCellViewModel.swift */,
+			);
+			path = "Counts Cell";
+			sourceTree = "<group>";
+		};
+		390A15CC1CDB8899007FFF21 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				390A15CD1CDB8899007FFF21 /* OptionCell.swift */,
+				390A15CE1CDB8899007FFF21 /* OptionCell.xib */,
+				390A15CF1CDB8899007FFF21 /* OptionCellViewModel.swift */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
+		390A15D91CDB88DA007FFF21 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				390A15DA1CDB88DA007FFF21 /* API */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		390A15DA1CDB88DA007FFF21 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				390A15F41CDB8F1E007FFF21 /* Resource.swift */,
+				390A15EA1CDB8EF5007FFF21 /* Utils */,
+				390A15EF1CDB8F18007FFF21 /* Models */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		390A15DB1CDB88F1007FFF21 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				390A15DC1CDB88F1007FFF21 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		390A15E91CDB8D46007FFF21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3929AC881CDF304F00D6317E /* SlackTextViewController.framework */,
+				390A15E61CDB8D3A007FFF21 /* OAuthSwift.framework */,
+				390A15E21CDB8D27007FFF21 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		390A15EA1CDB8EF5007FFF21 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				390A15EB1CDB8EF5007FFF21 /* APIConstants.plist */,
+				390A15EC1CDB8EF5007FFF21 /* APIConstantsManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		390A15EF1CDB8F18007FFF21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				390A15F01CDB8F18007FFF21 /* AccountModel.swift */,
+				390A15F11CDB8F18007FFF21 /* AccountsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		392230A51CDDFDA300380F4E /* Products Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Products Cell";
+			sourceTree = "<group>";
+		};
+		399022CC1CDB41A70095850A = {
+			isa = PBXGroup;
+			children = (
+				399022D71CDB41A80095850A /* BancApp */,
+				399022EC1CDB41A80095850A /* BancAppTests */,
+				399022F71CDB41A80095850A /* BancAppUITests */,
+				399022D61CDB41A80095850A /* Products */,
+				DEAAD206F22B36544C4DBFC2 /* Pods */,
+				2C844FF44EDAD981E1FDF48F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		399022D61CDB41A80095850A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				399022D51CDB41A80095850A /* BancApp.app */,
+				399022E91CDB41A80095850A /* BancAppTests.xctest */,
+				399022F41CDB41A80095850A /* BancAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		399022D71CDB41A80095850A /* BancApp */ = {
+			isa = PBXGroup;
+			children = (
+				399022D81CDB41A80095850A /* AppDelegate.swift */,
+				390A15DB1CDB88F1007FFF21 /* Controllers */,
+				399023091CDB56A30095850A /* Shared Code */,
+				390A15C41CDB8315007FFF21 /* Models */,
+				390A15C71CDB8899007FFF21 /* Views */,
+				390A15D91CDB88DA007FFF21 /* Repositories */,
+				390A15E91CDB8D46007FFF21 /* Frameworks */,
+				399022DC1CDB41A80095850A /* Main.storyboard */,
+				399022DF1CDB41A80095850A /* Assets.xcassets */,
+				399022E11CDB41A80095850A /* LaunchScreen.storyboard */,
+				399022E41CDB41A80095850A /* Info.plist */,
+			);
+			path = BancApp;
+			sourceTree = "<group>";
+		};
+		399022EC1CDB41A80095850A /* BancAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				399022ED1CDB41A80095850A /* BancAppTests.swift */,
+				399022EF1CDB41A80095850A /* Info.plist */,
+			);
+			path = BancAppTests;
+			sourceTree = "<group>";
+		};
+		399022F71CDB41A80095850A /* BancAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				399022F81CDB41A80095850A /* BancAppUITests.swift */,
+				399022FA1CDB41A80095850A /* Info.plist */,
+			);
+			path = BancAppUITests;
+			sourceTree = "<group>";
+		};
+		399023091CDB56A30095850A /* Shared Code */ = {
+			isa = PBXGroup;
+			children = (
+				3990230A1CDB56A30095850A /* RootViewController.swift */,
+				3990230C1CDB56BF0095850A /* RootViewModel.swift */,
+				390A15C11CDB82B8007FFF21 /* Views */,
+			);
+			path = "Shared Code";
+			sourceTree = "<group>";
+		};
+		DEAAD206F22B36544C4DBFC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD81678F94CA816975C380BB /* Pods.debug.xcconfig */,
+				0E28AEFFE69979FBE0A996F8 /* Pods.release.xcconfig */,
+				0222EEA3FAACA3191CE752CD /* Pods-BancAppTests.debug.xcconfig */,
+				7065A35C652465004B9D7371 /* Pods-BancAppTests.release.xcconfig */,
+				14D93AC90B5FFD54F4BE80EF /* Pods-BancAppUITests.debug.xcconfig */,
+				D799E90FF79B036E1431002D /* Pods-BancAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		399022D41CDB41A80095850A /* BancApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 399022FD1CDB41A80095850A /* Build configuration list for PBXNativeTarget "BancApp" */;
+			buildPhases = (
+				E8097FD1B1EC2D570DFA2E04 /* Check Pods Manifest.lock */,
+				399022D11CDB41A80095850A /* Sources */,
+				399022D21CDB41A80095850A /* Frameworks */,
+				399022D31CDB41A80095850A /* Resources */,
+				C4416CEE297B2E5A69DB0472 /* Embed Pods Frameworks */,
+				AB28BF7830E662635151D2E8 /* Copy Pods Resources */,
+				399023081CDB54E70095850A /* ShellScript */,
+				390A15E51CDB8D28007FFF21 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BancApp;
+			productName = BancApp;
+			productReference = 399022D51CDB41A80095850A /* BancApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		399022E81CDB41A80095850A /* BancAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 399023001CDB41A80095850A /* Build configuration list for PBXNativeTarget "BancAppTests" */;
+			buildPhases = (
+				CC4BD515478286059514B206 /* Check Pods Manifest.lock */,
+				399022E51CDB41A80095850A /* Sources */,
+				399022E61CDB41A80095850A /* Frameworks */,
+				399022E71CDB41A80095850A /* Resources */,
+				1F4390988AD7B3C68A320E74 /* Embed Pods Frameworks */,
+				133A38672C1B5EEACDCE2CFE /* Copy Pods Resources */,
+				3929AC8B1CDF307000D6317E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				399022EB1CDB41A80095850A /* PBXTargetDependency */,
+			);
+			name = BancAppTests;
+			productName = BancAppTests;
+			productReference = 399022E91CDB41A80095850A /* BancAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		399022F31CDB41A80095850A /* BancAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 399023031CDB41A80095850A /* Build configuration list for PBXNativeTarget "BancAppUITests" */;
+			buildPhases = (
+				9337E13166F49D215BA14B7E /* Check Pods Manifest.lock */,
+				399022F01CDB41A80095850A /* Sources */,
+				399022F11CDB41A80095850A /* Frameworks */,
+				399022F21CDB41A80095850A /* Resources */,
+				61348E03AA5E608584956B16 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				399022F61CDB41A80095850A /* PBXTargetDependency */,
+			);
+			name = BancAppUITests;
+			productName = BancAppUITests;
+			productReference = 399022F41CDB41A80095850A /* BancAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		399022CD1CDB41A70095850A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Alberto Moral";
+				TargetAttributes = {
+					399022D41CDB41A80095850A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					399022E81CDB41A80095850A = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 399022D41CDB41A80095850A;
+					};
+					399022F31CDB41A80095850A = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 399022D41CDB41A80095850A;
+					};
+				};
+			};
+			buildConfigurationList = 399022D01CDB41A70095850A /* Build configuration list for PBXProject "BancApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 399022CC1CDB41A70095850A;
+			productRefGroup = 399022D61CDB41A80095850A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				399022D41CDB41A80095850A /* BancApp */,
+				399022E81CDB41A80095850A /* BancAppTests */,
+				399022F31CDB41A80095850A /* BancAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		399022D31CDB41A80095850A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				390A15D41CDB8899007FFF21 /* OptionCell.xib in Resources */,
+				390A15ED1CDB8EF5007FFF21 /* APIConstants.plist in Resources */,
+				399022E31CDB41A80095850A /* LaunchScreen.storyboard in Resources */,
+				399022E01CDB41A80095850A /* Assets.xcassets in Resources */,
+				399022DE1CDB41A80095850A /* Main.storyboard in Resources */,
+				390A15D11CDB8899007FFF21 /* BancSabadellCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		399022E71CDB41A80095850A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		399022F21CDB41A80095850A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		133A38672C1B5EEACDCE2CFE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BancAppTests/Pods-BancAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F4390988AD7B3C68A320E74 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BancAppTests/Pods-BancAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3929AC8B1CDF307000D6317E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SlackTextViewController.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		399023081CDB54E70095850A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SlackTextViewController.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MGSwipeTableCell.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		61348E03AA5E608584956B16 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BancAppUITests/Pods-BancAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9337E13166F49D215BA14B7E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB28BF7830E662635151D2E8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4416CEE297B2E5A69DB0472 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC4BD515478286059514B206 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E8097FD1B1EC2D570DFA2E04 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		399022D11CDB41A80095850A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				399022D91CDB41A80095850A /* AppDelegate.swift in Sources */,
+				390A15D31CDB8899007FFF21 /* OptionCell.swift in Sources */,
+				390A15EE1CDB8EF5007FFF21 /* APIConstantsManager.swift in Sources */,
+				390A15F51CDB8F1E007FFF21 /* Resource.swift in Sources */,
+				390A15C61CDB8315007FFF21 /* BancSabadellModel.swift in Sources */,
+				390A15DD1CDB88F1007FFF21 /* ViewController.swift in Sources */,
+				390A15C31CDB82B8007FFF21 /* BubbleCustomView.swift in Sources */,
+				390A15F21CDB8F18007FFF21 /* AccountModel.swift in Sources */,
+				390A15F31CDB8F18007FFF21 /* AccountsModel.swift in Sources */,
+				390A15D21CDB8899007FFF21 /* BancSabadellCellViewModel.swift in Sources */,
+				3990230D1CDB56BF0095850A /* RootViewModel.swift in Sources */,
+				390A15D01CDB8899007FFF21 /* BancSabadellCell.swift in Sources */,
+				3990230B1CDB56A30095850A /* RootViewController.swift in Sources */,
+				390A15D51CDB8899007FFF21 /* OptionCellViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		399022E51CDB41A80095850A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				399022EE1CDB41A80095850A /* BancAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		399022F01CDB41A80095850A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				399022F91CDB41A80095850A /* BancAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		399022EB1CDB41A80095850A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 399022D41CDB41A80095850A /* BancApp */;
+			targetProxy = 399022EA1CDB41A80095850A /* PBXContainerItemProxy */;
+		};
+		399022F61CDB41A80095850A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 399022D41CDB41A80095850A /* BancApp */;
+			targetProxy = 399022F51CDB41A80095850A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		399022DC1CDB41A80095850A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				399022DD1CDB41A80095850A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		399022E11CDB41A80095850A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				399022E21CDB41A80095850A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		399022FB1CDB41A80095850A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		399022FC1CDB41A80095850A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		399022FE1CDB41A80095850A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD81678F94CA816975C380BB /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BancApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.albertomoral.BancApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		399022FF1CDB41A80095850A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E28AEFFE69979FBE0A996F8 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BancApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.albertomoral.BancApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		399023011CDB41A80095850A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0222EEA3FAACA3191CE752CD /* Pods-BancAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BancAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.albertomoral.BancAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BancApp.app/BancApp";
+			};
+			name = Debug;
+		};
+		399023021CDB41A80095850A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7065A35C652465004B9D7371 /* Pods-BancAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BancAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.albertomoral.BancAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BancApp.app/BancApp";
+			};
+			name = Release;
+		};
+		399023041CDB41A80095850A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14D93AC90B5FFD54F4BE80EF /* Pods-BancAppUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = BancAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.albertomoral.BancAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BancApp;
+			};
+			name = Debug;
+		};
+		399023051CDB41A80095850A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D799E90FF79B036E1431002D /* Pods-BancAppUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = BancAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.albertomoral.BancAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BancApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		399022D01CDB41A70095850A /* Build configuration list for PBXProject "BancApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				399022FB1CDB41A80095850A /* Debug */,
+				399022FC1CDB41A80095850A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		399022FD1CDB41A80095850A /* Build configuration list for PBXNativeTarget "BancApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				399022FE1CDB41A80095850A /* Debug */,
+				399022FF1CDB41A80095850A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		399023001CDB41A80095850A /* Build configuration list for PBXNativeTarget "BancAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				399023011CDB41A80095850A /* Debug */,
+				399023021CDB41A80095850A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		399023031CDB41A80095850A /* Build configuration list for PBXNativeTarget "BancAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				399023041CDB41A80095850A /* Debug */,
+				399023051CDB41A80095850A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 399022CD1CDB41A70095850A /* Project object */;
+}
