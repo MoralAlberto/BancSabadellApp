@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import BancApp
+import OHHTTPStubs
 
 class BancAppTests: XCTestCase {
     
@@ -21,16 +22,30 @@ class BancAppTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+    func testThatRetrieveAccessToken() {
+        let rootViewModel = RootViewModel()
+        let accountResource: Resource<AccountsModel> = Resource(pathComponent: "\(APIConstants.APIEndPoint()!+APIConstants.APIPathAccounts()!)")
+        
+        let expectation = expectationWithDescription("Get Characters")
+
+
+        OHHTTPStubs.stubRequestsPassingTest({ (request: NSURLRequest) -> Bool in
+            return request.URL?.absoluteString == "https://developers.bancsabadell.com/ResourcesServerBS/oauthservices/v1.0.0/cuentasvista"
+        }) { (request: NSURLRequest) -> OHHTTPStubsResponse in
+            let pathResponse = OHPathForFile("response.json", self.dynamicType)
+            return OHHTTPStubsResponse(fileAtPath: pathResponse!, statusCode: 200, headers: ["Content-Type":"application/json"])
         }
+        
+        rootViewModel.createCall(withResource: accountResource) { boolean in
+            expectation.fulfill()
+        }
+
+        waitForExpectationsWithTimeout(100) { error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
+            XCTAssertEqual(rootViewModel.messages.count, 2, "Should be two the number of accounts received")
+        }
+        
     }
-    
 }
