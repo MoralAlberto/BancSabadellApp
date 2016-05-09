@@ -109,7 +109,12 @@ extension RootViewModel {
         accountResource.loadAsynchronous(AccountsModel.self) { x in
             print(x)
             
-            for account in x.data! {
+            guard let value = x.data else {
+                completionBlock(true)
+                return
+            }
+            
+            for account in value {
                 let newAccount = BancSabadellModel()
                 newAccount.balance = account.balance
                 newAccount.descriptionAccount = account.description
