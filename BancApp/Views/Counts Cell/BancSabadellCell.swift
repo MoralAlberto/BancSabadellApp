@@ -29,7 +29,6 @@ class BancSabadellCell: UITableViewCell, BancSabadellCellViewModelDelegate {
         
         selectionStyle = .None
         viewModel.delegate = self
-        
     }
     
     func updateViews() {

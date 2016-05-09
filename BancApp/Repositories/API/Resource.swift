@@ -53,7 +53,7 @@ extension Resource {
                 callback(result!)
         }) { (error) in
             //  Si hay error, haz la lógica para refrescar el Token
-            self.refreshToken()
+//            self.refreshToken()
         }
     }
     

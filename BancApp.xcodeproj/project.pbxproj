@@ -28,12 +28,16 @@
 		3929AC891CDF304F00D6317E /* SlackTextViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3929AC881CDF304F00D6317E /* SlackTextViewController.framework */; };
 		3929AC8A1CDF304F00D6317E /* SlackTextViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3929AC881CDF304F00D6317E /* SlackTextViewController.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3929AC8C1CDF310000D6317E /* SlackTextViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3929AC881CDF304F00D6317E /* SlackTextViewController.framework */; };
-		3929AC8E1CDF376D00D6317E /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 3929AC8D1CDF376D00D6317E /* response.json */; };
+		395C75C61CE0835A0051C44D /* BancSabadellModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C75C51CE0835A0051C44D /* BancSabadellModelSpec.swift */; };
+		395C75CA1CE0835F0051C44D /* BancSabadellCuentasVistaNoTokenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C75C81CE0835F0051C44D /* BancSabadellCuentasVistaNoTokenSpec.swift */; };
+		395C75CB1CE0835F0051C44D /* BancSabadellCuentasVistaSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C75C91CE0835F0051C44D /* BancSabadellCuentasVistaSpec.swift */; };
+		395C75CF1CE083690051C44D /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 395C75CD1CE083690051C44D /* response.json */; };
+		395C75D01CE083690051C44D /* response_error_token.json in Resources */ = {isa = PBXBuildFile; fileRef = 395C75CE1CE083690051C44D /* response_error_token.json */; };
+		395C75D21CE083960051C44D /* RootViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C75D11CE083960051C44D /* RootViewModelSpec.swift */; };
 		399022D91CDB41A80095850A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399022D81CDB41A80095850A /* AppDelegate.swift */; };
 		399022DE1CDB41A80095850A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399022DC1CDB41A80095850A /* Main.storyboard */; };
 		399022E01CDB41A80095850A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399022DF1CDB41A80095850A /* Assets.xcassets */; };
 		399022E31CDB41A80095850A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399022E11CDB41A80095850A /* LaunchScreen.storyboard */; };
-		399022EE1CDB41A80095850A /* BancAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399022ED1CDB41A80095850A /* BancAppTests.swift */; };
 		399022F91CDB41A80095850A /* BancAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399022F81CDB41A80095850A /* BancAppUITests.swift */; };
 		3990230B1CDB56A30095850A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990230A1CDB56A30095850A /* RootViewController.swift */; };
 		3990230D1CDB56BF0095850A /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990230C1CDB56BF0095850A /* RootViewModel.swift */; };
@@ -97,7 +101,12 @@
 		390A15F11CDB8F18007FFF21 /* AccountsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsModel.swift; sourceTree = "<group>"; };
 		390A15F41CDB8F1E007FFF21 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		3929AC881CDF304F00D6317E /* SlackTextViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlackTextViewController.framework; path = Carthage/Build/iOS/SlackTextViewController.framework; sourceTree = "<group>"; };
-		3929AC8D1CDF376D00D6317E /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
+		395C75C51CE0835A0051C44D /* BancSabadellModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellModelSpec.swift; sourceTree = "<group>"; };
+		395C75C81CE0835F0051C44D /* BancSabadellCuentasVistaNoTokenSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellCuentasVistaNoTokenSpec.swift; sourceTree = "<group>"; };
+		395C75C91CE0835F0051C44D /* BancSabadellCuentasVistaSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancSabadellCuentasVistaSpec.swift; sourceTree = "<group>"; };
+		395C75CD1CE083690051C44D /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
+		395C75CE1CE083690051C44D /* response_error_token.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response_error_token.json; sourceTree = "<group>"; };
+		395C75D11CE083960051C44D /* RootViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModelSpec.swift; sourceTree = "<group>"; };
 		399022D51CDB41A80095850A /* BancApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BancApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		399022D81CDB41A80095850A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		399022DD1CDB41A80095850A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,7 +114,6 @@
 		399022E21CDB41A80095850A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		399022E41CDB41A80095850A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		399022E91CDB41A80095850A /* BancAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BancAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		399022ED1CDB41A80095850A /* BancAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancAppTests.swift; sourceTree = "<group>"; };
 		399022EF1CDB41A80095850A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		399022F41CDB41A80095850A /* BancAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BancAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		399022F81CDB41A80095850A /* BancAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancAppUITests.swift; sourceTree = "<group>"; };
@@ -269,6 +277,32 @@
 			path = "Products Cell";
 			sourceTree = "<group>";
 		};
+		395C75C41CE0835A0051C44D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				395C75C51CE0835A0051C44D /* BancSabadellModelSpec.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		395C75C71CE0835F0051C44D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				395C75C81CE0835F0051C44D /* BancSabadellCuentasVistaNoTokenSpec.swift */,
+				395C75C91CE0835F0051C44D /* BancSabadellCuentasVistaSpec.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		395C75CC1CE083690051C44D /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				395C75CD1CE083690051C44D /* response.json */,
+				395C75CE1CE083690051C44D /* response_error_token.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		399022CC1CDB41A70095850A = {
 			isa = PBXGroup;
 			children = (
@@ -312,8 +346,10 @@
 		399022EC1CDB41A80095850A /* BancAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				3929AC8D1CDF376D00D6317E /* response.json */,
-				399022ED1CDB41A80095850A /* BancAppTests.swift */,
+				395C75CC1CE083690051C44D /* Stubs */,
+				395C75C41CE0835A0051C44D /* Model */,
+				395C75C71CE0835F0051C44D /* API */,
+				395C75D11CE083960051C44D /* RootViewModelSpec.swift */,
 				399022EF1CDB41A80095850A /* Info.plist */,
 			);
 			path = BancAppTests;
@@ -366,6 +402,7 @@
 				AB28BF7830E662635151D2E8 /* Copy Pods Resources */,
 				399023081CDB54E70095850A /* ShellScript */,
 				390A15E51CDB8D28007FFF21 /* Embed Frameworks */,
+				39223D2C1CDFB3C000BED0A8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -479,7 +516,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3929AC8E1CDF376D00D6317E /* response.json in Resources */,
+				395C75D01CE083690051C44D /* response_error_token.json in Resources */,
+				395C75CF1CE083690051C44D /* response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +560,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BancAppTests/Pods-BancAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		39223D2C1CDFB3C000BED0A8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
 		};
 		3929AC8B1CDF307000D6317E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -672,7 +723,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				399022EE1CDB41A80095850A /* BancAppTests.swift in Sources */,
+				395C75CA1CE0835F0051C44D /* BancSabadellCuentasVistaNoTokenSpec.swift in Sources */,
+				395C75D21CE083960051C44D /* RootViewModelSpec.swift in Sources */,
+				395C75C61CE0835A0051C44D /* BancSabadellModelSpec.swift in Sources */,
+				395C75CB1CE0835F0051C44D /* BancSabadellCuentasVistaSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
