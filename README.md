@@ -2,11 +2,7 @@
 
 
 ##DEMO
-![image_one](https://github.com/MoralAlberto/BancApp/blob/develop/Resources/image_one.png)
-![image_two](https://raw.githubusercontent.com/MoralAlberto/BancApp/develop/Resources/image_two.png)
-![image_three](https://raw.githubusercontent.com/MoralAlberto/BancApp/develop/Resources/image_three.png)
-![image_four](https://raw.githubusercontent.com/MoralAlberto/BancApp/develop/Resources/image_four.png)
-
+![image](https://raw.githubusercontent.com/MoralAlberto/BancApp/develop/Resources/images.jpg?token=AA41i9iNVGpSUVMwtApFxtzZBkJbsYEYks5X0cD3wA%3D%3D)
 
 ##Installation
 
