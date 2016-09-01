@@ -143,6 +143,7 @@ static NSString *const SLKTextViewGenericFormattingSelectorPrefix = @"slk_format
         _placeholderLabel.backgroundColor = [UIColor clearColor];
         _placeholderLabel.textColor = [UIColor lightGrayColor];
         _placeholderLabel.hidden = YES;
+        _placeholderLabel.isAccessibilityElement = NO;
         
         [self addSubview:_placeholderLabel];
     }
@@ -601,10 +602,6 @@ SLKPastableMediaType SLKPastableMediaTypeFromNSString(NSString *string)
         return YES;
     }
     
-    if (action == @selector(paste:) && [self slk_isPasteboardItemSupported]) {
-        return YES;
-    }
-    
     if (self.undoManagerEnabled) {
         if (action == @selector(slk_undo:)) {
             if (self.undoManager.undoActionIsDiscardable) {
@@ -880,7 +877,7 @@ SLKPastableMediaType SLKPastableMediaTypeFromNSString(NSString *string)
 
 - (void)slk_willShowMenuController:(NSNotification *)notification
 {
-    
+    // Do something
 }
 
 - (void)slk_didHideMenuController:(NSNotification *)notification
