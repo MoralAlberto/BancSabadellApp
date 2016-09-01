@@ -13,7 +13,7 @@ $ carthage update
 ```
 
 ##Introduction
-Simple demo to use the Banc Sabadell API. If you want to try, the password is 4788.
+Simple demo to use the Banc Sabadell API. If you want to try, the password is 4788. The demo account is in development, so all the information that you can recover it's clearly fake
 
 ##Requirements
 - iOS 9.0+
