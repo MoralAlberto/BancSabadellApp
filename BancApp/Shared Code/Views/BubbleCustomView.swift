@@ -1,6 +1,6 @@
 //
 //  BubbleCustomView.swift
-//  Boomerang
+//  BancApp
 //
 //  Created by Alberto on 3/3/16.
 //  Copyright © 2016 Alberto Moral. All rights reserved.

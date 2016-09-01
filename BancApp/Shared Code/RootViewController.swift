@@ -54,18 +54,17 @@ class RootViewController: SLKTextViewController {
         //  Register prefixes to show autocompletion
         self.registerPrefixesForAutoCompletion(viewModel.detectAutocompletion)
         
-        //  API CALL
         self.viewModel.getAccounts()
     }
     
 
     //MARK: TableView DataSource
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //  Show me the messages! or show me the autocompletion option
         return (tableView.isEqual(self.tableView)) ? viewModel.messages.count : viewModel.searchResult.count
     }
-    
-    //  Select on cell type or another, depending if the user is type some autocompletion keyword like: '#', '@', etc in our case '#'
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         return (tableView.isEqual(self.tableView)) ? self.messageCellForRowAtIndexPath(indexPath) : self.autoCompletionCellForRowAtIndexPath(indexPath)
     }
@@ -74,14 +73,15 @@ class RootViewController: SLKTextViewController {
         let cell = self.tableView!.dequeueReusableCellWithIdentifier(viewModel.bancSabadellCellReuseIdentifier, forIndexPath:indexPath) as? BancSabadellCell
         
         let text = viewModel.messages[indexPath.row]
-        cell?.viewModel.configureWithArticle(text, atIndexPath: indexPath)
+        cell?.viewModel.configureCellWithObject(text, atIndexPath: indexPath)
         cell?.transform = self.tableView!.transform;
         
         return cell!
     }
     
 
-    //MARK: TableView Delegate
+    //MARK: - TableView Delegate
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if (tableView.isEqual(self.autoCompletionView)) {
             
@@ -95,13 +95,12 @@ class RootViewController: SLKTextViewController {
     }
     
     //MARK: Override Slack Methods
+    
     override func didPressRightButton(sender: AnyObject!) {
         
         self.textView.refreshFirstResponder();
-        
         let message = BancSabadellModel()
-        
-        
+    
         let indexPath = NSIndexPath(forItem: 0, inSection: 0)
         let scrollPosition = self.inverted ? UITableViewScrollPosition.Bottom : UITableViewScrollPosition.Top;
         let rowAnimation = self.inverted ? UITableViewRowAnimation.Bottom : UITableViewRowAnimation.Top
@@ -142,14 +141,12 @@ class RootViewController: SLKTextViewController {
         let text = viewModel.searchResult[indexPath.row];
         cell?.viewModel.configureWithOption((text as? String)!, atIndexPath: indexPath)
         
-        
         return cell!
     }
     
 }
 
 extension RootViewController: RootViewModelDelegate {
-    
     func updateView() {
         self.tableView?.reloadData()
     }

@@ -19,7 +19,6 @@ class RootViewModel: NSObject {
     var delegate: RootViewModelDelegate!
     
     // Vars
-    
     let maxChars: UInt = 256
     let estimateRowHeight: CGFloat = 85.0
     
@@ -39,14 +38,12 @@ class RootViewModel: NSObject {
     let optionsCellReuseIdentifier = "AutoCompletionCell"
 
     
-    /// MARK: Methods
+    // MARK: Public Methods
     func arrayWithCoincidences(prefix: String, word: String) -> [String]? {
         
         searchResult = [String]()
         
-        guard prefix == "#" else {
-            return nil
-        }
+        guard prefix == "#" else { return nil }
         
         if (prefix == "#") {
             let arrayWithAutocompletion = (word.characters.count > 0) ?
@@ -70,24 +67,23 @@ class RootViewModel: NSObject {
         guard let optionName = searchResult[indexPath.row] as? String else { return "" }
         
         if (prefix == "#" && range.location == 0) {
-            
             switch optionName {
-            case "Cuentas":
+            case "Accounts":
                 print("Option #1")
                 self.getAccounts()
-            case "Tarjetas":
+            case "Cards":
                 print("Option #2")
                 self.getCards()
             default:
                 print("No code")
             }
         }
-        
         return optionName
     }
 }
 
-//MARK: API calls
+//MARK: - API calls
+
 extension RootViewModel {
     func getAccounts() {
         let accountResource: Resource<AccountsModel> = Resource(pathComponent: "\(APIConstants.APIEndPoint()!+APIConstants.APIPathAccounts()!)")
@@ -105,6 +101,7 @@ extension RootViewModel {
     }
     
     //  API Helpers
+    
     func createCall(withResource accountResource: Resource<AccountsModel>, completionBlock: (Bool)->()) {
         accountResource.loadAsynchronous(AccountsModel.self) { x in
             print(x)
@@ -119,7 +116,7 @@ extension RootViewModel {
                 newAccount.balance = account.balance
                 newAccount.descriptionAccount = account.description
                 newAccount.iban = account.iban
-                newAccount.producto = account.producto
+                newAccount.product = account.product
                 
                 self.messages.append(newAccount)
             }

@@ -11,6 +11,6 @@ import Foundation
 class BancSabadellModel: NSObject {
     var balance: String?
     var descriptionAccount: String?
-    var producto: String?
+    var product: String?
     var iban: String?
 }
