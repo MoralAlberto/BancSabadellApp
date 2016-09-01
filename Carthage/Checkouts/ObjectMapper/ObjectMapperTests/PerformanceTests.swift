@@ -101,7 +101,7 @@ class Person: Mappable {
 	}
 }
 
-class PersonCluster: MappableCluster {
+class PersonCluster: StaticMappable {
 	
 	var username: String = ""
 	var identifier: String?

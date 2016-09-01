@@ -1,6 +1,6 @@
 //
 //  ArticleCellViewModel.swift
-//  Boomerang
+//  BancApp
 //
 //  Created by Alberto on 3/3/16.
 //  Copyright © 2016 Alberto Moral. All rights reserved.
@@ -21,19 +21,18 @@ class BancSabadellCellViewModel: NSObject {
     var indexPath: NSIndexPath?
     var balance: String?
     var descriptionAccount: String?
-    var producto: String?
+    var product: String?
     var iban: String?
     
-    func configureWithArticle(article: BancSabadellModel, atIndexPath indexPath: NSIndexPath) {
-        self.account = article
+    func configureCellWithObject(object: BancSabadellModel, atIndexPath indexPath: NSIndexPath) {
+        self.account = object
         
-        self.balance = article.balance
+        self.balance = object.balance
         self.indexPath = indexPath
-        self.descriptionAccount = article.descriptionAccount
-        self.producto = article.producto
-        self.iban = article.iban
+        self.descriptionAccount = object.descriptionAccount
+        self.product = object.product
+        self.iban = object.iban
         
         delegate.updateViews()
     }
-    
 }

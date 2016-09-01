@@ -1,6 +1,6 @@
 //
 //  MessageCell.swift
-//  Boomerang
+//  BancApp
 //
 //  Created by Alberto Moral on 20/2/16.
 //  Copyright © 2016 Alberto Moral. All rights reserved.

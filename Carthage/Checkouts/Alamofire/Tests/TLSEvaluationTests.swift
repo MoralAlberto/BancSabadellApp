@@ -1,33 +1,36 @@
-// TLSEvaluationTests.swift
 //
-// Copyright (c) 2014–2016 Alamofire Software Foundation (http://alamofire.org/)
+//  TLSEvaluationTests.swift
 //
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to deal
-// in the Software without restriction, including without limitation the rights
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
+//  Copyright (c) 2014-2016 Alamofire Software Foundation (http://alamofire.org/)
 //
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
 //
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// THE SOFTWARE.
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
 
 import Alamofire
 import Foundation
 import XCTest
 
 private struct TestCertificates {
-    static let RootCA = TestCertificates.certificateWithFileName("root-ca-disig")
-    static let IntermediateCA = TestCertificates.certificateWithFileName("intermediate-ca-disig")
-    static let Leaf = TestCertificates.certificateWithFileName("testssl-expire.disig.sk")
+    static let RootCA = TestCertificates.certificateWithFileName("expired.badssl.com-root-ca")
+    static let IntermediateCA1 = TestCertificates.certificateWithFileName("expired.badssl.com-intermediate-ca-1")
+    static let IntermediateCA2 = TestCertificates.certificateWithFileName("expired.badssl.com-intermediate-ca-2")
+    static let Leaf = TestCertificates.certificateWithFileName("expired.badssl.com-leaf")
 
     static func certificateWithFileName(fileName: String) -> SecCertificate {
         class Bundle {}
@@ -43,7 +46,8 @@ private struct TestCertificates {
 
 private struct TestPublicKeys {
     static let RootCA = TestPublicKeys.publicKeyForCertificate(TestCertificates.RootCA)
-    static let IntermediateCA = TestPublicKeys.publicKeyForCertificate(TestCertificates.IntermediateCA)
+    static let IntermediateCA1 = TestPublicKeys.publicKeyForCertificate(TestCertificates.IntermediateCA1)
+    static let IntermediateCA2 = TestPublicKeys.publicKeyForCertificate(TestCertificates.IntermediateCA2)
     static let Leaf = TestPublicKeys.publicKeyForCertificate(TestCertificates.Leaf)
 
     static func publicKeyForCertificate(certificate: SecCertificate) -> SecKey {
@@ -60,8 +64,8 @@ private struct TestPublicKeys {
 // MARK: -
 
 class TLSEvaluationExpiredLeafCertificateTestCase: BaseTestCase {
-    let URL = "https://testssl-expire.disig.sk/"
-    let host = "testssl-expire.disig.sk"
+    let URL = "https://expired.badssl.com/"
+    let host = "expired.badssl.com"
     var configuration: NSURLSessionConfiguration!
 
     // MARK: Setup and Teardown
@@ -168,7 +172,13 @@ class TLSEvaluationExpiredLeafCertificateTestCase: BaseTestCase {
 
     func testThatExpiredCertificateRequestFailsWhenPinningAllCertificatesWithCertificateChainValidation() {
         // Given
-        let certificates = [TestCertificates.Leaf, TestCertificates.IntermediateCA, TestCertificates.RootCA]
+        let certificates = [
+            TestCertificates.Leaf,
+            TestCertificates.IntermediateCA1,
+            TestCertificates.IntermediateCA2,
+            TestCertificates.RootCA
+        ]
+
         let policies: [String: ServerTrustPolicy] = [
             host: .PinCertificates(certificates: certificates, validateCertificateChain: true, validateHost: true)
         ]
@@ -230,7 +240,7 @@ class TLSEvaluationExpiredLeafCertificateTestCase: BaseTestCase {
 
     func testThatExpiredCertificateRequestSucceedsWhenPinningIntermediateCACertificateWithoutCertificateChainValidation() {
         // Given
-        let certificates = [TestCertificates.IntermediateCA]
+        let certificates = [TestCertificates.IntermediateCA2]
         let policies: [String: ServerTrustPolicy] = [
             host: .PinCertificates(certificates: certificates, validateCertificateChain: false, validateHost: true)
         ]
@@ -350,7 +360,7 @@ class TLSEvaluationExpiredLeafCertificateTestCase: BaseTestCase {
 
     func testThatExpiredCertificateRequestSucceedsWhenPinningIntermediateCAPublicKeyWithoutCertificateChainValidation() {
         // Given
-        let publicKeys = [TestPublicKeys.IntermediateCA]
+        let publicKeys = [TestPublicKeys.IntermediateCA2]
         let policies: [String: ServerTrustPolicy] = [
             host: .PinPublicKeys(publicKeys: publicKeys, validateCertificateChain: false, validateHost: true)
         ]

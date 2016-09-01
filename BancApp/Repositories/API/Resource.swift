@@ -52,14 +52,12 @@ extension Resource {
                 print(json)
                 callback(result!)
         }) { (error) in
-            //  Si hay error, haz la lógica para refrescar el Token
-//            self.refreshToken()
+            //  If there is an error, we need to refresh that token
         }
     }
     
     
     func login() {
-        
         oauthswift.accessTokenBasicAuthentification = true
         let state: String = generateStateWithLength(16) as String
         
@@ -79,8 +77,6 @@ extension Resource {
             }
         )
     }
-    
-    
     
     func refreshToken() {
         let base64Encoded = base64EncodedString()
@@ -104,14 +100,14 @@ extension Resource {
     }
 }
 
-//MARK: Helpers
+// MARK: - Helpers
+
 extension Resource {
     
     //  Headers
     func headerResource(token: String) -> [String: String] {
         let headers = ["Accept": "application/json, application/x-www-form-urlencoded",
                        "Authorization" : "Bearer \(token)"]
-        
         return headers
     }
     
@@ -129,7 +125,6 @@ extension Resource {
                       "refresh_token"   : refreshToken,
                       "grant_type"      : "refresh_token"
         ]
-        
         return params
     }
     
@@ -138,7 +133,6 @@ extension Resource {
         let clientID_ClientSecret = APIConstants.APIClientID()!+":"+APIConstants.APIClientSecret()!
         let authentification = clientID_ClientSecret.dataUsingEncoding(NSUTF8StringEncoding)
         let base64Encoded = authentification?.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue: 0))
-        
         return base64Encoded!
     }
     

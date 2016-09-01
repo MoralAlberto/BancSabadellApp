@@ -1,6 +1,6 @@
 //
 //  OptionCellViewModel.swift
-//  Boomerang
+//  BancApp
 //
 //  Created by Alberto on 9/3/16.
 //  Copyright © 2016 Alberto Moral. All rights reserved.
@@ -22,7 +22,6 @@ class OptionCellViewModel: NSObject {
         self.optionName = name
         self.indexPath = indexPath
         
-        //Call the delegate
         delegate?.updateView()
     }
 }
