@@ -23,7 +23,7 @@ class RootViewModel: NSObject {
     let estimateRowHeight: CGFloat = 85.0
     
     // Override Variables
-    var options: NSArray = ["Cuentas", "Tarjetas"]
+    var options: NSArray = ["Accounts", "Cards"]
     //  Symbol to Detect Autocompletion
     var detectAutocompletion: [String] = ["#"]
     
