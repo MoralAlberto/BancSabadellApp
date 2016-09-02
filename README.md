@@ -1,5 +1,6 @@
-#Demo BancSabadell API
+[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=572dc20e9d431601000dcdc8&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/572dc20e9d431601000dcdc8/build/latest)
 
+#Demo BancSabadell API
 
 ##DEMO
 ![image](https://raw.githubusercontent.com/MoralAlberto/BancApp/develop/Resources/images.jpg?token=AA41i9iNVGpSUVMwtApFxtzZBkJbsYEYks5X0cD3wA%3D%3D)
