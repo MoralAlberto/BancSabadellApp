@@ -7,7 +7,6 @@
 //
 
 @testable import BancApp
-import OHHTTPStubs
 import Quick
 import Nimble
 

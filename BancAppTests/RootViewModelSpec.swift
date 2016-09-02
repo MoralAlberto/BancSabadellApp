@@ -79,13 +79,13 @@ class BancSabadellCuentasVistaNoTokenSpec: QuickSpec {
             
             context("Function arrayWithCoincidences", {
                 
-                rootViewModel.arrayWithCoincidences("#", word: "Cuentas")
+                rootViewModel.arrayWithCoincidences("#", word: "Accounts")
                 
-                it("With param #Cuentas, return 'Cuentas'", closure: {
-                    expect(rootViewModel.searchResult[0] as! String == "Cuentas").to(beTrue())
+                it("With param #Accounts, return 'Accounts'", closure: {
+                    expect(rootViewModel.searchResult[0] as! String == "Accounts").to(beTrue())
                 })
                 
-                it("With param #Cuentas, one Object", closure: {
+                it("With param #Accounts, one Object", closure: {
                     expect(rootViewModel.searchResult.count == 1).to(beTrue())
                 })
                 

@@ -29,7 +29,7 @@ class BancSabadellModelSpec: QuickSpec {
                 })
                 
                 it("Producto and is a String", closure: {
-                    expect(bancSabadellModel.producto is String?).to(beTrue())
+                    expect(bancSabadellModel.product is String?).to(beTrue())
                 })
                 
                 it("Iban and is a String", closure: {
