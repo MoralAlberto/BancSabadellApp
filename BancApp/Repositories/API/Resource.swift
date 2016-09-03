@@ -9,34 +9,38 @@
 import Foundation
 import ObjectMapper
 import OAuthSwift
-import Prephirences
+
+enum ResponseType: String {
+    case code
+}
 
 struct Resource<A> {
     let pathComponent: String
     
     let oauthswift = OAuth2Swift(
-        consumerKey:    APIConstants.APIClientID()!,
-        consumerSecret: APIConstants.APIClientSecret()!,
-        authorizeUrl:   APIConstants.APIPathOAuthURL()!,
-        accessTokenUrl: APIConstants.APIPathOAuthURLAccessToken()!,
-        responseType:   "code"
+            consumerKey:    APIConstants.APIClientId()!,
+            consumerSecret: APIConstants.APIClientSecret()!,
+            authorizeUrl:   APIConstants.APIPathOAuthURL()!,
+            accessTokenUrl: APIConstants.APIPathOAuthURLAccessToken()!,
+            responseType:   ResponseType.code.rawValue
     )
-    
-    var clientID_clientSecret: String {
-        return APIConstants.APIClientID()!+":"+APIConstants.APIClientSecret()!
-    }
 }
 
 extension Resource {
     func loadAsynchronous<A: Mappable>(toClass: A.Type, callback: A -> ())  {
-        guard let token = NSUserDefaults.standardUserDefaults().objectForKey("token") as? String else {
-            //  Si no existe el token, carga la web para logearme
+        let tokenExpirationDate = NSUserDefaults.standardUserDefaults().objectForKey("token_expires_at") as! NSDate
+        
+        guard let token = NSUserDefaults.standardUserDefaults().objectForKey("token") as? String where
+            tokenExpirationDate > NSDate() else {
+            //  If the token hasn't been created, login to BancSabadell portal or has been expired
             login()
             return
         }
-        //  Si existe el token, haz la llamada a la API
-        let header = headerResource(token)
         
+        print("Token expiration Date \(tokenExpirationDate)")
+        
+        //  If tokens has been created, get the info from the server
+        let header = headerResource(token)
         makeAPICallWith(header, toClass: toClass, callback: callback)
     }
     
@@ -53,9 +57,9 @@ extension Resource {
                 callback(result!)
         }) { (error) in
             //  If there is an error, we need to refresh that token
+            print("Error \(error)")
         }
     }
-    
     
     func login() {
         oauthswift.accessTokenBasicAuthentification = true
@@ -93,7 +97,6 @@ extension Resource {
             guard let json = try? NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) else { return }
             
             self.updateCredentials(json)
-            
         }) { (error) in
             self.login()
         }
@@ -104,7 +107,6 @@ extension Resource {
 
 extension Resource {
     
-    //  Headers
     func headerResource(token: String) -> [String: String] {
         let headers = ["Accept": "application/json, application/x-www-form-urlencoded",
                        "Authorization" : "Bearer \(token)"]
@@ -120,8 +122,8 @@ extension Resource {
     
     func paramsRefreshToken() -> [String: String] {
         let refreshToken = NSUserDefaults.standardUserDefaults().objectForKey("refresh_token") as! String
-        let params = ["client_id"       : "CLI1455983911404GzJ5rZJOV2sH37vNncxsPvRAofHTff4MGzR6K02K84764Y",
-                      "client_secret"   : "C4ligul4s",
+        let params = ["client_id"       : APIConstants.APIClientId()!,
+                      "client_secret"   : APIConstants.APIClientSecret()!,
                       "refresh_token"   : refreshToken,
                       "grant_type"      : "refresh_token"
         ]
@@ -130,8 +132,8 @@ extension Resource {
     
     
     func base64EncodedString() -> String {
-        let clientID_ClientSecret = APIConstants.APIClientID()!+":"+APIConstants.APIClientSecret()!
-        let authentification = clientID_ClientSecret.dataUsingEncoding(NSUTF8StringEncoding)
+        let clientId_ClientSecret = APIConstants.APIClientId()!+":"+APIConstants.APIClientSecret()!
+        let authentification = clientId_ClientSecret.dataUsingEncoding(NSUTF8StringEncoding)
         let base64Encoded = authentification?.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue: 0))
         return base64Encoded!
     }

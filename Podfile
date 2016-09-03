@@ -4,8 +4,6 @@ platform :ios, '8.0'
 use_frameworks!
 
 pod 'OAuthSwift'
-pod 'Haneke', '~> 1.0'
-pod 'Prephirences'
 
 def testing_pods
     pod 'Quick'

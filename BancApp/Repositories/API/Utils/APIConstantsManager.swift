@@ -1,6 +1,6 @@
 //
 //  APIConstantsManager.swift
-//  ReactiveAPI
+//  BancSabadellAPI
 //
 //  Created by Diana on 12/9/15.
 //  Copyright (c) 2015 Moral. All rights reserved.
@@ -23,7 +23,7 @@ class APIConstantsManager {
 class APIConstants {
     
     static var ApiEndPoint = "APIEndPoint"
-    static var ApiClientID = "APIClientID"
+    static var ApiClientId = "APIClientID"
     static var ApiClientSecret = "APIClientSecret"
     
     static var ApiPathAccounts = "APIPaths.APIPathAccounts"
@@ -41,8 +41,8 @@ class APIConstants {
         return valueDict[ApiEndPoint] as? String
     }
     
-    static func APIClientID() -> String? {
-        return valueDict[ApiClientID] as? String
+    static func APIClientId() -> String? {
+        return valueDict[ApiClientId] as? String
     }
     
     static func APIClientSecret() -> String? {
