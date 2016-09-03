@@ -1,6 +1,6 @@
 //
-//  Items.swift
-//  BancSabadellAPI
+//  AccountModel.swift
+//  BancSabadellAPIKit
 //
 //  Created by Alberto Moral on 6/9/15.
 //  Copyright (c) 2015 Moral. All rights reserved.
@@ -23,6 +23,5 @@ class AccountModel: Mappable {
         balance <- map["balance"]
         iban <- map["iban"]
         product <- map["producto"]
-        
     }
 }

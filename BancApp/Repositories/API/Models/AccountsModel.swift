@@ -1,6 +1,6 @@
 //
-//  QuestionModel.swift
-//  BancSabadellAPI
+//  AccountsModel.swift
+//  BancSabadellAPIKit
 //
 //  Created by Alberto Moral on 30/4/16.
 //  Copyright © 2016 Alberto Moral. All rights reserved.

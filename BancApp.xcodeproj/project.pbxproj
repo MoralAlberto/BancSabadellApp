@@ -42,6 +42,7 @@
 		3990230B1CDB56A30095850A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990230A1CDB56A30095850A /* RootViewController.swift */; };
 		3990230D1CDB56BF0095850A /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990230C1CDB56BF0095850A /* RootViewModel.swift */; };
 		39DC97ED1D7AC7C10038C940 /* DateComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DC97EC1D7AC7C10038C940 /* DateComparator.swift */; };
+		39DC98781D7B245A0038C940 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DC98771D7B245A0038C940 /* WebService.swift */; };
 		B068770985BD144B5999D59D /* Pods_BancAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FA14F25BFBF02507AE9273 /* Pods_BancAppUITests.framework */; };
 		C55B164B42EE15B28BB6BF19 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AF6107DE1576428B28E485 /* Pods.framework */; };
 		E735C88ACEBC8CD6E5013EA2 /* Pods_BancAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7A8CC0D17EEEA14976ED5C /* Pods_BancAppTests.framework */; };
@@ -122,6 +123,7 @@
 		3990230A1CDB56A30095850A /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		3990230C1CDB56BF0095850A /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		39DC97EC1D7AC7C10038C940 /* DateComparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateComparator.swift; sourceTree = "<group>"; };
+		39DC98771D7B245A0038C940 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		7065A35C652465004B9D7371 /* Pods-BancAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BancAppTests/Pods-BancAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		9E7A8CC0D17EEEA14976ED5C /* Pods_BancAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BancAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D799E90FF79B036E1431002D /* Pods-BancAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BancAppUITests/Pods-BancAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				390A15F41CDB8F1E007FFF21 /* Resource.swift */,
+				39DC98771D7B245A0038C940 /* WebService.swift */,
 				390A15EA1CDB8EF5007FFF21 /* Utils */,
 				390A15EF1CDB8F18007FFF21 /* Models */,
 				39DC97EB1D7AC7AD0038C940 /* Helpers */,
@@ -723,6 +726,7 @@
 				390A15F21CDB8F18007FFF21 /* AccountModel.swift in Sources */,
 				39DC97ED1D7AC7C10038C940 /* DateComparator.swift in Sources */,
 				390A15F31CDB8F18007FFF21 /* AccountsModel.swift in Sources */,
+				39DC98781D7B245A0038C940 /* WebService.swift in Sources */,
 				390A15D21CDB8899007FFF21 /* BancSabadellCellViewModel.swift in Sources */,
 				3990230D1CDB56BF0095850A /* RootViewModel.swift in Sources */,
 				390A15D01CDB8899007FFF21 /* BancSabadellCell.swift in Sources */,
